@@ -1,0 +1,10 @@
+D:\ESPE\5-6 level\Grafica\ComputacionGrafica\Paint_Proyect\Paint_Proyect\bin\Debug\Paint_Proyect.exe.config
+D:\ESPE\5-6 level\Grafica\ComputacionGrafica\Paint_Proyect\Paint_Proyect\bin\Debug\Paint_Proyect.exe
+D:\ESPE\5-6 level\Grafica\ComputacionGrafica\Paint_Proyect\Paint_Proyect\bin\Debug\Paint_Proyect.pdb
+D:\ESPE\5-6 level\Grafica\ComputacionGrafica\Paint_Proyect\Paint_Proyect\obj\Debug\Paint_Proyect.csproj.AssemblyReference.cache
+D:\ESPE\5-6 level\Grafica\ComputacionGrafica\Paint_Proyect\Paint_Proyect\obj\Debug\Paint_Proyect.Form1.resources
+D:\ESPE\5-6 level\Grafica\ComputacionGrafica\Paint_Proyect\Paint_Proyect\obj\Debug\Paint_Proyect.Properties.Resources.resources
+D:\ESPE\5-6 level\Grafica\ComputacionGrafica\Paint_Proyect\Paint_Proyect\obj\Debug\Paint_Proyect.csproj.GenerateResource.cache
+D:\ESPE\5-6 level\Grafica\ComputacionGrafica\Paint_Proyect\Paint_Proyect\obj\Debug\Paint_Proyect.csproj.CoreCompileInputs.cache
+D:\ESPE\5-6 level\Grafica\ComputacionGrafica\Paint_Proyect\Paint_Proyect\obj\Debug\Paint_Proyect.exe
+D:\ESPE\5-6 level\Grafica\ComputacionGrafica\Paint_Proyect\Paint_Proyect\obj\Debug\Paint_Proyect.pdb

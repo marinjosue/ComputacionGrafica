@@ -16,5 +16,30 @@ namespace Paint_Proyect
         {
             InitializeComponent();
         }
+
+        private void btnEstrella_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void SquardToolsBTN_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ElipseToolsBTN_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void LineToolsBTN_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
