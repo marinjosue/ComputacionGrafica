@@ -637,7 +637,7 @@
         AAAAAAAAAAAAAAAAAf/Z
 </value>
   </data>
-  <data name="btnEstrella.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="EstrellaBtn.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         /9j/4AAQSkZJRgABAQEAYABgAAD/4QCORXhpZgAATU0AKgAAAAgAAwExAAIAAAAHAAAAMgISAAMAAAAC
         AAEAAYdpAAQAAAABAAAAOgAAAABHb29nbGUAAAAEkAAABwAAAAQwMjIwkAMAAgAAABQAAABwoAIABAAA
@@ -1456,7 +1456,7 @@
         oooAKQdKKKAD1paKKAEFBoooAWiiigBKWiigApPWiigBaKKKACiiigD/2Q==
 </value>
   </data>
-  <data name="SquardToolsBTN.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="CuadradoBtn.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAJQAAACVCAYAAAC+YNNxAAAABGdBTUEAALGPC/xhBQAAAvpJREFUeF7t
         1LEuM3wYxmHpxoLG0rmD1HsSSoKIM2DXkbKIQRwC56BLHQID5yGWThZGhub5omnepBHJl9e9ua7knv75
@@ -2709,7 +2709,7 @@
   <data name="button1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAHAAAABlCAYAAACV+2djAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAS
-        cgAAEnIBXmVb4wAADfhJREFUeF7tnXesFcUXx39/gggCIh1RpDcFRBFQEGkiSEc0gAEDBCIQUcAghBaq
+        cQAAEnEB89x6jgAADfhJREFUeF7tnXesFcUXx39/gggCIh1RpDcFRBFQEGkiSEc0gAEDBCIQUcAghBaq
         glJ8ilTpAaVJEwRUSqSI0ptUAbuiIAoK4++z2X2Zmbv3vbv37t69Zb/JJPB27+5mvntmvnPOmbP/EwGS
         GgGBSY6AwCRHQKCH+P7778Xu3bvFihUrxIwZM8Q777wjFi5cKLZs2SJOnDghrl27Zp4ZPQICXQakfPbZ
         Z+L5558XjRs3Fg8++KC47777RKFChUSBAgVEiRIlRJUqVcRjjz0mWrVqJWbOnCl+/vln89fOERDoEm7d

@@ -48,9 +48,9 @@
             this.RightChoiceBTN = new System.Windows.Forms.Button();
             this.leftChoiceBTN = new System.Windows.Forms.Button();
             this.groupBoxForTools = new System.Windows.Forms.GroupBox();
-            this.btnEstrella = new System.Windows.Forms.Button();
+            this.EstrellaBtn = new System.Windows.Forms.Button();
             this.ElipseToolsBTN = new System.Windows.Forms.Button();
-            this.SquardToolsBTN = new System.Windows.Forms.Button();
+            this.CuadradoBtn = new System.Windows.Forms.Button();
             this.LineToolsBTN = new System.Windows.Forms.Button();
             this.WidthLineBTN = new System.Windows.Forms.Button();
             this.RubberToolsBTN = new System.Windows.Forms.Button();
@@ -61,6 +61,7 @@
             this.guardarComo = new System.Windows.Forms.ToolStripMenuItem();
             this.imagenPNG = new System.Windows.Forms.ToolStripMenuItem();
             this.imagenJPEG = new System.Windows.Forms.ToolStripMenuItem();
+            this.imagenBMP = new System.Windows.Forms.ToolStripMenuItem();
             this.cargarImagenes = new System.Windows.Forms.ToolStripMenuItem();
             this.Nuevo = new System.Windows.Forms.ToolStripMenuItem();
             this.Salir = new System.Windows.Forms.ToolStripMenuItem();
@@ -70,19 +71,18 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.tamanioOpcion = new System.Windows.Forms.GroupBox();
+            this.groupTamanioOpcion = new System.Windows.Forms.GroupBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.imagenBMP = new System.Windows.Forms.ToolStripMenuItem();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.ColorBox.SuspendLayout();
             this.groupBoxForTools.SuspendLayout();
             this.toolStripMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
-            this.tamanioOpcion.SuspendLayout();
+            this.groupTamanioOpcion.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
@@ -299,9 +299,9 @@
             // 
             // groupBoxForTools
             // 
-            this.groupBoxForTools.Controls.Add(this.btnEstrella);
+            this.groupBoxForTools.Controls.Add(this.EstrellaBtn);
             this.groupBoxForTools.Controls.Add(this.ElipseToolsBTN);
-            this.groupBoxForTools.Controls.Add(this.SquardToolsBTN);
+            this.groupBoxForTools.Controls.Add(this.CuadradoBtn);
             this.groupBoxForTools.Controls.Add(this.LineToolsBTN);
             this.groupBoxForTools.Location = new System.Drawing.Point(1223, 31);
             this.groupBoxForTools.Margin = new System.Windows.Forms.Padding(4);
@@ -312,17 +312,17 @@
             this.groupBoxForTools.TabStop = false;
             this.groupBoxForTools.Text = "Formas";
             // 
-            // btnEstrella
+            // EstrellaBtn
             // 
-            this.btnEstrella.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnEstrella.BackgroundImage")));
-            this.btnEstrella.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnEstrella.Location = new System.Drawing.Point(163, 33);
-            this.btnEstrella.Margin = new System.Windows.Forms.Padding(4);
-            this.btnEstrella.Name = "btnEstrella";
-            this.btnEstrella.Size = new System.Drawing.Size(43, 39);
-            this.btnEstrella.TabIndex = 7;
-            this.btnEstrella.UseVisualStyleBackColor = true;
-            this.btnEstrella.Click += new System.EventHandler(this.btnEstrella_Click);
+            this.EstrellaBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("EstrellaBtn.BackgroundImage")));
+            this.EstrellaBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.EstrellaBtn.Location = new System.Drawing.Point(163, 33);
+            this.EstrellaBtn.Margin = new System.Windows.Forms.Padding(4);
+            this.EstrellaBtn.Name = "EstrellaBtn";
+            this.EstrellaBtn.Size = new System.Drawing.Size(43, 39);
+            this.EstrellaBtn.TabIndex = 7;
+            this.EstrellaBtn.UseVisualStyleBackColor = true;
+            this.EstrellaBtn.Click += new System.EventHandler(this.btnEstrella_Click);
             // 
             // ElipseToolsBTN
             // 
@@ -336,17 +336,17 @@
             this.ElipseToolsBTN.UseVisualStyleBackColor = true;
             this.ElipseToolsBTN.Click += new System.EventHandler(this.ElipseToolsBTN_Click);
             // 
-            // SquardToolsBTN
+            // CuadradoBtn
             // 
-            this.SquardToolsBTN.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("SquardToolsBTN.BackgroundImage")));
-            this.SquardToolsBTN.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.SquardToolsBTN.Location = new System.Drawing.Point(112, 30);
-            this.SquardToolsBTN.Margin = new System.Windows.Forms.Padding(4);
-            this.SquardToolsBTN.Name = "SquardToolsBTN";
-            this.SquardToolsBTN.Size = new System.Drawing.Size(43, 39);
-            this.SquardToolsBTN.TabIndex = 2;
-            this.SquardToolsBTN.UseVisualStyleBackColor = true;
-            this.SquardToolsBTN.Click += new System.EventHandler(this.SquardToolsBTN_Click);
+            this.CuadradoBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("CuadradoBtn.BackgroundImage")));
+            this.CuadradoBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.CuadradoBtn.Location = new System.Drawing.Point(112, 30);
+            this.CuadradoBtn.Margin = new System.Windows.Forms.Padding(4);
+            this.CuadradoBtn.Name = "CuadradoBtn";
+            this.CuadradoBtn.Size = new System.Drawing.Size(43, 39);
+            this.CuadradoBtn.TabIndex = 2;
+            this.CuadradoBtn.UseVisualStyleBackColor = true;
+            this.CuadradoBtn.Click += new System.EventHandler(this.SquardToolsBTN_Click);
             // 
             // LineToolsBTN
             // 
@@ -366,12 +366,14 @@
             this.WidthLineBTN.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.WidthLineBTN.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("WidthLineBTN.BackgroundImage")));
             this.WidthLineBTN.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.WidthLineBTN.Enabled = false;
             this.WidthLineBTN.Location = new System.Drawing.Point(1485, 64);
             this.WidthLineBTN.Margin = new System.Windows.Forms.Padding(4);
             this.WidthLineBTN.Name = "WidthLineBTN";
             this.WidthLineBTN.Size = new System.Drawing.Size(60, 40);
             this.WidthLineBTN.TabIndex = 6;
             this.WidthLineBTN.UseVisualStyleBackColor = false;
+            this.WidthLineBTN.Click += new System.EventHandler(this.WidthLineBTN_Click);
             // 
             // RubberToolsBTN
             // 
@@ -418,7 +420,7 @@
             this.toolStripMenu.Location = new System.Drawing.Point(0, 0);
             this.toolStripMenu.Name = "toolStripMenu";
             this.toolStripMenu.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-            this.toolStripMenu.Size = new System.Drawing.Size(1902, 27);
+            this.toolStripMenu.Size = new System.Drawing.Size(1902, 31);
             this.toolStripMenu.TabIndex = 9;
             this.toolStripMenu.Text = "toolStripMenu";
             // 
@@ -433,7 +435,7 @@
             this.MenuFile.Image = ((System.Drawing.Image)(resources.GetObject("MenuFile.Image")));
             this.MenuFile.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.MenuFile.Name = "MenuFile";
-            this.MenuFile.Size = new System.Drawing.Size(34, 24);
+            this.MenuFile.Size = new System.Drawing.Size(34, 28);
             this.MenuFile.Text = "Menu";
             // 
             // guardarComo
@@ -443,37 +445,43 @@
             this.imagenJPEG,
             this.imagenBMP});
             this.guardarComo.Name = "guardarComo";
-            this.guardarComo.Size = new System.Drawing.Size(224, 26);
+            this.guardarComo.Size = new System.Drawing.Size(204, 26);
             this.guardarComo.Text = "Guardar Como";
             // 
             // imagenPNG
             // 
             this.imagenPNG.Name = "imagenPNG";
-            this.imagenPNG.Size = new System.Drawing.Size(224, 26);
+            this.imagenPNG.Size = new System.Drawing.Size(177, 26);
             this.imagenPNG.Text = "Imagen PNG";
             // 
             // imagenJPEG
             // 
             this.imagenJPEG.Name = "imagenJPEG";
-            this.imagenJPEG.Size = new System.Drawing.Size(224, 26);
+            this.imagenJPEG.Size = new System.Drawing.Size(177, 26);
             this.imagenJPEG.Text = "Imagen JPEG";
+            // 
+            // imagenBMP
+            // 
+            this.imagenBMP.Name = "imagenBMP";
+            this.imagenBMP.Size = new System.Drawing.Size(177, 26);
+            this.imagenBMP.Text = "Imagen BMP";
             // 
             // cargarImagenes
             // 
             this.cargarImagenes.Name = "cargarImagenes";
-            this.cargarImagenes.Size = new System.Drawing.Size(224, 26);
+            this.cargarImagenes.Size = new System.Drawing.Size(204, 26);
             this.cargarImagenes.Text = "Cargar Imagenes";
             // 
             // Nuevo
             // 
             this.Nuevo.Name = "Nuevo";
-            this.Nuevo.Size = new System.Drawing.Size(224, 26);
+            this.Nuevo.Size = new System.Drawing.Size(204, 26);
             this.Nuevo.Text = "Nuevo";
             // 
             // Salir
             // 
             this.Salir.Name = "Salir";
-            this.Salir.Size = new System.Drawing.Size(224, 26);
+            this.Salir.Size = new System.Drawing.Size(204, 26);
             this.Salir.Text = "Salir";
             // 
             // MenuUndo
@@ -483,7 +491,7 @@
             this.MenuUndo.Image = ((System.Drawing.Image)(resources.GetObject("MenuUndo.Image")));
             this.MenuUndo.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.MenuUndo.Name = "MenuUndo";
-            this.MenuUndo.Size = new System.Drawing.Size(29, 24);
+            this.MenuUndo.Size = new System.Drawing.Size(29, 28);
             this.MenuUndo.Text = "Deshacer";
             // 
             // RedoBTN
@@ -493,7 +501,7 @@
             this.RedoBTN.Image = ((System.Drawing.Image)(resources.GetObject("RedoBTN.Image")));
             this.RedoBTN.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.RedoBTN.Name = "RedoBTN";
-            this.RedoBTN.Size = new System.Drawing.Size(29, 24);
+            this.RedoBTN.Size = new System.Drawing.Size(29, 28);
             this.RedoBTN.Text = "Rehacer";
             // 
             // vScrollBar1
@@ -539,22 +547,22 @@
             this.button1.TabIndex = 6;
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // tamanioOpcion
+            // groupTamanioOpcion
             // 
-            this.tamanioOpcion.Controls.Add(this.label4);
-            this.tamanioOpcion.Controls.Add(this.label3);
-            this.tamanioOpcion.Controls.Add(this.label2);
-            this.tamanioOpcion.Controls.Add(this.label1);
-            this.tamanioOpcion.Controls.Add(this.Line2BTN);
-            this.tamanioOpcion.Controls.Add(this.Line4BTN);
-            this.tamanioOpcion.Controls.Add(this.Line3BTN);
-            this.tamanioOpcion.Controls.Add(this.Line1BTN);
-            this.tamanioOpcion.Location = new System.Drawing.Point(1485, 111);
-            this.tamanioOpcion.Name = "tamanioOpcion";
-            this.tamanioOpcion.Size = new System.Drawing.Size(232, 161);
-            this.tamanioOpcion.TabIndex = 14;
-            this.tamanioOpcion.TabStop = false;
-            this.tamanioOpcion.Visible = false;
+            this.groupTamanioOpcion.Controls.Add(this.label4);
+            this.groupTamanioOpcion.Controls.Add(this.label3);
+            this.groupTamanioOpcion.Controls.Add(this.label2);
+            this.groupTamanioOpcion.Controls.Add(this.label1);
+            this.groupTamanioOpcion.Controls.Add(this.Line2BTN);
+            this.groupTamanioOpcion.Controls.Add(this.Line4BTN);
+            this.groupTamanioOpcion.Controls.Add(this.Line3BTN);
+            this.groupTamanioOpcion.Controls.Add(this.Line1BTN);
+            this.groupTamanioOpcion.Location = new System.Drawing.Point(1485, 111);
+            this.groupTamanioOpcion.Name = "groupTamanioOpcion";
+            this.groupTamanioOpcion.Size = new System.Drawing.Size(232, 161);
+            this.groupTamanioOpcion.TabIndex = 14;
+            this.groupTamanioOpcion.TabStop = false;
+            this.groupTamanioOpcion.Visible = false;
             // 
             // label4
             // 
@@ -597,12 +605,6 @@
             this.label1.Text = "1px";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // imagenBMP
-            // 
-            this.imagenBMP.Name = "imagenBMP";
-            this.imagenBMP.Size = new System.Drawing.Size(224, 26);
-            this.imagenBMP.Text = "Imagen BMP";
-            // 
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
@@ -619,7 +621,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1902, 1033);
             this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.tamanioOpcion);
+            this.Controls.Add(this.groupTamanioOpcion);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.WidthLineBTN);
@@ -638,8 +640,8 @@
             this.toolStripMenu.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox1.ResumeLayout(false);
-            this.tamanioOpcion.ResumeLayout(false);
-            this.tamanioOpcion.PerformLayout();
+            this.groupTamanioOpcion.ResumeLayout(false);
+            this.groupTamanioOpcion.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -671,7 +673,7 @@
         private System.Windows.Forms.Button FillToolsBTN;
         private System.Windows.Forms.Button TextToolsBTN;
         private System.Windows.Forms.Button ElipseToolsBTN;
-        private System.Windows.Forms.Button SquardToolsBTN;
+        private System.Windows.Forms.Button CuadradoBtn;
         private System.Windows.Forms.Button LineToolsBTN;
         private System.Windows.Forms.ToolStrip toolStripMenu;
         private System.Windows.Forms.ToolStripDropDownButton MenuFile;
@@ -685,10 +687,10 @@
         private System.Windows.Forms.ToolStripButton RedoBTN;
         private System.Windows.Forms.VScrollBar vScrollBar1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button btnEstrella;
+        private System.Windows.Forms.Button EstrellaBtn;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.GroupBox tamanioOpcion;
+        private System.Windows.Forms.GroupBox groupTamanioOpcion;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
