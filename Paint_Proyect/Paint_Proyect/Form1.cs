@@ -13,18 +13,12 @@ namespace Paint_Proyect
     public partial class Form1 : Form
     {
 
-        Graphics g;
-        int x = -1;
-        int y = -1;
-        bool movimiento = false;
-        Pen pen;
+
+        private Dibujar classDibujar;
         public Form1()
         {
             InitializeComponent();
-            g = picCanvasLienzo.CreateGraphics();
-            pen = new Pen(Color.Black,5);
-            g.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias; 
-            pen.StartCap = pen.EndCap = System.Drawing.Drawing2D.LineCap.Round;
+            classDibujar = new Dibujar(picCanvasLienzo.CreateGraphics());
         }
 
         private void btnEstrella_Click(object sender, EventArgs e)
@@ -60,34 +54,25 @@ namespace Paint_Proyect
 
         private void picCanvasLienzo_MouseDown(object sender, MouseEventArgs e)
         {
-            movimiento = true;
-            x=e.X;
-            y=e.Y;  
-            picCanvasLienzo.Cursor= Cursors.Hand;   
+            classDibujar.IniciarDibujo(e);
+            picCanvasLienzo.Cursor = Cursors.Hand;
         }
 
         private void picCanvasLienzo_MouseMove(object sender, MouseEventArgs e)
         {
-            if(movimiento && x!=-1 && y != -1)
-            {
-                g.DrawLine(pen, new Point(x,y), e.Location);
-                x = e.X;
-                y = e.Y;
-            }
+            classDibujar.DibujarLinea(e);
         }
 
         private void picCanvasLienzo_MouseUp(object sender, MouseEventArgs e)
         {
-            movimiento = false;
-            x = -1;
-            y= -1;
+            classDibujar.TerminarDibujo();
             picCanvasLienzo.Cursor = Cursors.Default;
         }
 
         private void ColorBTN1_Click(object sender, EventArgs e)
         {
-            Button btn = (Button)sender; // Obtener el Button
-            pen.Color = btn.BackColor; // Cambiar el color del pen al color de fondo del PictureBox
+            Button btn = (Button)sender;
+            classDibujar.CambiarColor(btn.BackColor);
         }
 
     }
