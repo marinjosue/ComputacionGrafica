@@ -17,7 +17,8 @@ namespace Paint_Proyect
         private Dibujar classDibujar;
         private bool borrarActivo = false;
         private Administrador administrador;
-
+        private bool estadoRellenoActivo = false;
+        private Color colorSeleccionado = Color.Black;
         public Form1()
         {
             InitializeComponent();
@@ -58,14 +59,28 @@ namespace Paint_Proyect
 
         private void picCanvasLienzo_MouseDown(object sender, MouseEventArgs e)
         {
-            if (borrarActivo)
+            if (estadoRellenoActivo)
             {
-                classDibujar.BorrarEnLinea(e);
+                // Obtener las coordenadas del clic en el lienzo
+                Point puntoInicio = e.Location;
+
+                // Llamar al método de relleno
+                classDibujar.RellenarArea(puntoInicio, colorSeleccionado);
+
+                // Desactivar el estado de relleno después de usarlo
+                estadoRellenoActivo = false;
             }
             else
             {
-                classDibujar.IniciarDibujo(e);
-                picCanvasLienzo.Cursor = Cursors.Hand;
+                // Si no estamos en modo de relleno, manejamos otras acciones (lapiz, borrador, etc.)
+                if (borrarActivo)
+                {
+                    classDibujar.BorrarEnLinea(e);
+                }
+                else
+                {
+                    classDibujar.IniciarDibujo(e);
+                }
             }
         }
 
@@ -98,7 +113,14 @@ namespace Paint_Proyect
         private void ColorBTN1_Click(object sender, EventArgs e)
         {
             Button btn = (Button)sender;
-            classDibujar.CambiarColor(btn.BackColor);
+            colorSeleccionado = btn.BackColor;
+            MessageBox.Show($"Color seleccionado: {colorSeleccionado.Name}");
+
+            // Verificar si ya estamos en el estado de relleno
+            if (estadoRellenoActivo)
+            {
+                MessageBox.Show("Ahora, haga clic en el área que desea rellenar.");
+            }
         }
 
         private void btnBorrar_Click(object sender, EventArgs e)
@@ -127,6 +149,12 @@ namespace Paint_Proyect
         private void Nuevo_Click(object sender, EventArgs e)
         {
             classDibujar.LimpiarLienzo();
+        }
+
+        private void btnRelleno_Click(object sender, EventArgs e)
+        {
+            estadoRellenoActivo = true;
+            MessageBox.Show("Por favor, elige un color y luego haz clic en el área que deseas rellenar.");
         }
     }
 }

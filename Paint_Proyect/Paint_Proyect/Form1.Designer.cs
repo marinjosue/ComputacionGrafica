@@ -90,10 +90,9 @@
             this.Line2BTN.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Line2BTN.BackgroundImage")));
             this.Line2BTN.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.Line2BTN.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.Line2BTN.Location = new System.Drawing.Point(2, 69);
-            this.Line2BTN.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Line2BTN.Location = new System.Drawing.Point(1, 45);
             this.Line2BTN.Name = "Line2BTN";
-            this.Line2BTN.Size = new System.Drawing.Size(216, 32);
+            this.Line2BTN.Size = new System.Drawing.Size(144, 21);
             this.Line2BTN.TabIndex = 1;
             this.Line2BTN.UseVisualStyleBackColor = false;
             // 
@@ -103,10 +102,9 @@
             this.Line1BTN.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Line1BTN.BackgroundImage")));
             this.Line1BTN.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.Line1BTN.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.Line1BTN.Location = new System.Drawing.Point(2, 28);
-            this.Line1BTN.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Line1BTN.Location = new System.Drawing.Point(1, 18);
             this.Line1BTN.Name = "Line1BTN";
-            this.Line1BTN.Size = new System.Drawing.Size(216, 31);
+            this.Line1BTN.Size = new System.Drawing.Size(144, 20);
             this.Line1BTN.TabIndex = 0;
             this.Line1BTN.UseVisualStyleBackColor = false;
             // 
@@ -116,10 +114,9 @@
             this.Line3BTN.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Line3BTN.BackgroundImage")));
             this.Line3BTN.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.Line3BTN.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.Line3BTN.Location = new System.Drawing.Point(2, 105);
-            this.Line3BTN.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Line3BTN.Location = new System.Drawing.Point(1, 68);
             this.Line3BTN.Name = "Line3BTN";
-            this.Line3BTN.Size = new System.Drawing.Size(218, 38);
+            this.Line3BTN.Size = new System.Drawing.Size(145, 25);
             this.Line3BTN.TabIndex = 2;
             this.Line3BTN.UseVisualStyleBackColor = false;
             // 
@@ -129,10 +126,9 @@
             this.Line4BTN.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Line4BTN.BackgroundImage")));
             this.Line4BTN.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.Line4BTN.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.Line4BTN.Location = new System.Drawing.Point(2, 154);
-            this.Line4BTN.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Line4BTN.Location = new System.Drawing.Point(1, 100);
             this.Line4BTN.Name = "Line4BTN";
-            this.Line4BTN.Size = new System.Drawing.Size(218, 38);
+            this.Line4BTN.Size = new System.Drawing.Size(145, 25);
             this.Line4BTN.TabIndex = 3;
             this.Line4BTN.UseVisualStyleBackColor = false;
             // 
@@ -151,11 +147,9 @@
             this.ColorBox.Controls.Add(this.ColorBTN1);
             this.ColorBox.Controls.Add(this.RightChoiceBTN);
             this.ColorBox.Controls.Add(this.leftChoiceBTN);
-            this.ColorBox.Location = new System.Drawing.Point(1065, 88);
-            this.ColorBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.ColorBox.Location = new System.Drawing.Point(710, 57);
             this.ColorBox.Name = "ColorBox";
-            this.ColorBox.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.ColorBox.Size = new System.Drawing.Size(362, 137);
+            this.ColorBox.Size = new System.Drawing.Size(241, 89);
             this.ColorBox.TabIndex = 6;
             this.ColorBox.TabStop = false;
             this.ColorBox.Text = "Colores";
@@ -163,10 +157,9 @@
             // rightRBTN
             // 
             this.rightRBTN.AutoSize = true;
-            this.rightRBTN.Location = new System.Drawing.Point(69, 100);
-            this.rightRBTN.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.rightRBTN.Location = new System.Drawing.Point(46, 65);
             this.rightRBTN.Name = "rightRBTN";
-            this.rightRBTN.Size = new System.Drawing.Size(21, 20);
+            this.rightRBTN.Size = new System.Drawing.Size(14, 13);
             this.rightRBTN.TabIndex = 12;
             this.rightRBTN.UseVisualStyleBackColor = true;
             // 
@@ -175,10 +168,9 @@
             this.leftRBTN.AutoSize = true;
             this.leftRBTN.Checked = true;
             this.leftRBTN.Font = new System.Drawing.Font("Marlett", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(204)));
-            this.leftRBTN.Location = new System.Drawing.Point(69, 42);
-            this.leftRBTN.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.leftRBTN.Location = new System.Drawing.Point(46, 27);
             this.leftRBTN.Name = "leftRBTN";
-            this.leftRBTN.Size = new System.Drawing.Size(21, 20);
+            this.leftRBTN.Size = new System.Drawing.Size(14, 13);
             this.leftRBTN.TabIndex = 11;
             this.leftRBTN.TabStop = true;
             this.leftRBTN.UseVisualStyleBackColor = true;
@@ -187,20 +179,18 @@
             // 
             this.ButtonColors.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ButtonColors.BackgroundImage")));
             this.ButtonColors.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ButtonColors.Location = new System.Drawing.Point(284, 29);
-            this.ButtonColors.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.ButtonColors.Location = new System.Drawing.Point(189, 19);
             this.ButtonColors.Name = "ButtonColors";
-            this.ButtonColors.Size = new System.Drawing.Size(69, 98);
+            this.ButtonColors.Size = new System.Drawing.Size(46, 64);
             this.ButtonColors.TabIndex = 10;
             this.ButtonColors.UseVisualStyleBackColor = true;
             // 
             // ColorBTN8
             // 
             this.ColorBTN8.BackColor = System.Drawing.Color.Aqua;
-            this.ColorBTN8.Location = new System.Drawing.Point(237, 83);
-            this.ColorBTN8.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.ColorBTN8.Location = new System.Drawing.Point(158, 54);
             this.ColorBTN8.Name = "ColorBTN8";
-            this.ColorBTN8.Size = new System.Drawing.Size(38, 38);
+            this.ColorBTN8.Size = new System.Drawing.Size(25, 25);
             this.ColorBTN8.TabIndex = 9;
             this.ColorBTN8.UseVisualStyleBackColor = false;
             this.ColorBTN8.Click += new System.EventHandler(this.ColorBTN1_Click);
@@ -208,10 +198,9 @@
             // ColorBTN4
             // 
             this.ColorBTN4.BackColor = System.Drawing.Color.Blue;
-            this.ColorBTN4.Location = new System.Drawing.Point(237, 35);
-            this.ColorBTN4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.ColorBTN4.Location = new System.Drawing.Point(158, 23);
             this.ColorBTN4.Name = "ColorBTN4";
-            this.ColorBTN4.Size = new System.Drawing.Size(38, 38);
+            this.ColorBTN4.Size = new System.Drawing.Size(25, 25);
             this.ColorBTN4.TabIndex = 8;
             this.ColorBTN4.UseVisualStyleBackColor = false;
             this.ColorBTN4.Click += new System.EventHandler(this.ColorBTN1_Click);
@@ -219,10 +208,9 @@
             // ColorBTN7
             // 
             this.ColorBTN7.BackColor = System.Drawing.Color.Yellow;
-            this.ColorBTN7.Location = new System.Drawing.Point(190, 83);
-            this.ColorBTN7.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.ColorBTN7.Location = new System.Drawing.Point(127, 54);
             this.ColorBTN7.Name = "ColorBTN7";
-            this.ColorBTN7.Size = new System.Drawing.Size(38, 38);
+            this.ColorBTN7.Size = new System.Drawing.Size(25, 25);
             this.ColorBTN7.TabIndex = 7;
             this.ColorBTN7.UseVisualStyleBackColor = false;
             this.ColorBTN7.Click += new System.EventHandler(this.ColorBTN1_Click);
@@ -230,10 +218,9 @@
             // ColorBTN3
             // 
             this.ColorBTN3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.ColorBTN3.Location = new System.Drawing.Point(190, 35);
-            this.ColorBTN3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.ColorBTN3.Location = new System.Drawing.Point(127, 23);
             this.ColorBTN3.Name = "ColorBTN3";
-            this.ColorBTN3.Size = new System.Drawing.Size(38, 38);
+            this.ColorBTN3.Size = new System.Drawing.Size(25, 25);
             this.ColorBTN3.TabIndex = 6;
             this.ColorBTN3.UseVisualStyleBackColor = false;
             this.ColorBTN3.Click += new System.EventHandler(this.ColorBTN1_Click);
@@ -241,10 +228,9 @@
             // ColorBTN6
             // 
             this.ColorBTN6.BackColor = System.Drawing.Color.Fuchsia;
-            this.ColorBTN6.Location = new System.Drawing.Point(144, 82);
-            this.ColorBTN6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.ColorBTN6.Location = new System.Drawing.Point(96, 53);
             this.ColorBTN6.Name = "ColorBTN6";
-            this.ColorBTN6.Size = new System.Drawing.Size(38, 38);
+            this.ColorBTN6.Size = new System.Drawing.Size(25, 25);
             this.ColorBTN6.TabIndex = 5;
             this.ColorBTN6.UseVisualStyleBackColor = false;
             this.ColorBTN6.Click += new System.EventHandler(this.ColorBTN1_Click);
@@ -252,10 +238,9 @@
             // ColorBTN2
             // 
             this.ColorBTN2.BackColor = System.Drawing.Color.Red;
-            this.ColorBTN2.Location = new System.Drawing.Point(144, 35);
-            this.ColorBTN2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.ColorBTN2.Location = new System.Drawing.Point(96, 23);
             this.ColorBTN2.Name = "ColorBTN2";
-            this.ColorBTN2.Size = new System.Drawing.Size(38, 38);
+            this.ColorBTN2.Size = new System.Drawing.Size(25, 25);
             this.ColorBTN2.TabIndex = 4;
             this.ColorBTN2.UseVisualStyleBackColor = false;
             this.ColorBTN2.Click += new System.EventHandler(this.ColorBTN1_Click);
@@ -263,10 +248,9 @@
             // ColorBTN5
             // 
             this.ColorBTN5.BackColor = System.Drawing.Color.Black;
-            this.ColorBTN5.Location = new System.Drawing.Point(98, 82);
-            this.ColorBTN5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.ColorBTN5.Location = new System.Drawing.Point(65, 53);
             this.ColorBTN5.Name = "ColorBTN5";
-            this.ColorBTN5.Size = new System.Drawing.Size(38, 38);
+            this.ColorBTN5.Size = new System.Drawing.Size(25, 25);
             this.ColorBTN5.TabIndex = 3;
             this.ColorBTN5.UseVisualStyleBackColor = false;
             this.ColorBTN5.Click += new System.EventHandler(this.ColorBTN1_Click);
@@ -274,10 +258,9 @@
             // ColorBTN1
             // 
             this.ColorBTN1.BackColor = System.Drawing.Color.White;
-            this.ColorBTN1.Location = new System.Drawing.Point(98, 35);
-            this.ColorBTN1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.ColorBTN1.Location = new System.Drawing.Point(65, 23);
             this.ColorBTN1.Name = "ColorBTN1";
-            this.ColorBTN1.Size = new System.Drawing.Size(38, 38);
+            this.ColorBTN1.Size = new System.Drawing.Size(25, 25);
             this.ColorBTN1.TabIndex = 2;
             this.ColorBTN1.UseVisualStyleBackColor = false;
             this.ColorBTN1.Click += new System.EventHandler(this.ColorBTN1_Click);
@@ -286,10 +269,9 @@
             // 
             this.RightChoiceBTN.BackColor = System.Drawing.Color.White;
             this.RightChoiceBTN.ForeColor = System.Drawing.Color.Coral;
-            this.RightChoiceBTN.Location = new System.Drawing.Point(12, 83);
-            this.RightChoiceBTN.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.RightChoiceBTN.Location = new System.Drawing.Point(8, 54);
             this.RightChoiceBTN.Name = "RightChoiceBTN";
-            this.RightChoiceBTN.Size = new System.Drawing.Size(48, 37);
+            this.RightChoiceBTN.Size = new System.Drawing.Size(32, 24);
             this.RightChoiceBTN.TabIndex = 1;
             this.RightChoiceBTN.UseVisualStyleBackColor = false;
             this.RightChoiceBTN.Click += new System.EventHandler(this.ColorBTN1_Click);
@@ -297,10 +279,9 @@
             // leftChoiceBTN
             // 
             this.leftChoiceBTN.BackColor = System.Drawing.Color.Black;
-            this.leftChoiceBTN.Location = new System.Drawing.Point(12, 28);
-            this.leftChoiceBTN.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.leftChoiceBTN.Location = new System.Drawing.Point(8, 18);
             this.leftChoiceBTN.Name = "leftChoiceBTN";
-            this.leftChoiceBTN.Size = new System.Drawing.Size(48, 46);
+            this.leftChoiceBTN.Size = new System.Drawing.Size(32, 30);
             this.leftChoiceBTN.TabIndex = 0;
             this.leftChoiceBTN.UseVisualStyleBackColor = false;
             this.leftChoiceBTN.Click += new System.EventHandler(this.ColorBTN1_Click);
@@ -311,11 +292,9 @@
             this.groupBoxForTools.Controls.Add(this.ElipseToolsBTN);
             this.groupBoxForTools.Controls.Add(this.CuadradoBtn);
             this.groupBoxForTools.Controls.Add(this.LineToolsBTN);
-            this.groupBoxForTools.Location = new System.Drawing.Point(772, 88);
-            this.groupBoxForTools.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.groupBoxForTools.Location = new System.Drawing.Point(515, 57);
             this.groupBoxForTools.Name = "groupBoxForTools";
-            this.groupBoxForTools.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.groupBoxForTools.Size = new System.Drawing.Size(267, 137);
+            this.groupBoxForTools.Size = new System.Drawing.Size(178, 89);
             this.groupBoxForTools.TabIndex = 5;
             this.groupBoxForTools.TabStop = false;
             this.groupBoxForTools.Text = "Formas";
@@ -324,10 +303,9 @@
             // 
             this.EstrellaBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("EstrellaBtn.BackgroundImage")));
             this.EstrellaBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.EstrellaBtn.Location = new System.Drawing.Point(183, 42);
-            this.EstrellaBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.EstrellaBtn.Location = new System.Drawing.Point(122, 27);
             this.EstrellaBtn.Name = "EstrellaBtn";
-            this.EstrellaBtn.Size = new System.Drawing.Size(48, 49);
+            this.EstrellaBtn.Size = new System.Drawing.Size(32, 32);
             this.EstrellaBtn.TabIndex = 7;
             this.EstrellaBtn.UseVisualStyleBackColor = true;
             this.EstrellaBtn.Click += new System.EventHandler(this.btnEstrella_Click);
@@ -336,10 +314,9 @@
             // 
             this.ElipseToolsBTN.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ElipseToolsBTN.BackgroundImage")));
             this.ElipseToolsBTN.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ElipseToolsBTN.Location = new System.Drawing.Point(69, 37);
-            this.ElipseToolsBTN.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.ElipseToolsBTN.Location = new System.Drawing.Point(46, 24);
             this.ElipseToolsBTN.Name = "ElipseToolsBTN";
-            this.ElipseToolsBTN.Size = new System.Drawing.Size(48, 49);
+            this.ElipseToolsBTN.Size = new System.Drawing.Size(32, 32);
             this.ElipseToolsBTN.TabIndex = 1;
             this.ElipseToolsBTN.UseVisualStyleBackColor = true;
             this.ElipseToolsBTN.Click += new System.EventHandler(this.ElipseToolsBTN_Click);
@@ -348,10 +325,9 @@
             // 
             this.CuadradoBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("CuadradoBtn.BackgroundImage")));
             this.CuadradoBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.CuadradoBtn.Location = new System.Drawing.Point(126, 37);
-            this.CuadradoBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.CuadradoBtn.Location = new System.Drawing.Point(84, 24);
             this.CuadradoBtn.Name = "CuadradoBtn";
-            this.CuadradoBtn.Size = new System.Drawing.Size(48, 49);
+            this.CuadradoBtn.Size = new System.Drawing.Size(32, 32);
             this.CuadradoBtn.TabIndex = 2;
             this.CuadradoBtn.UseVisualStyleBackColor = true;
             this.CuadradoBtn.Click += new System.EventHandler(this.SquardToolsBTN_Click);
@@ -361,10 +337,9 @@
             this.LineToolsBTN.BackColor = System.Drawing.SystemColors.ControlLight;
             this.LineToolsBTN.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("LineToolsBTN.BackgroundImage")));
             this.LineToolsBTN.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.LineToolsBTN.Location = new System.Drawing.Point(12, 37);
-            this.LineToolsBTN.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.LineToolsBTN.Location = new System.Drawing.Point(8, 24);
             this.LineToolsBTN.Name = "LineToolsBTN";
-            this.LineToolsBTN.Size = new System.Drawing.Size(48, 49);
+            this.LineToolsBTN.Size = new System.Drawing.Size(32, 32);
             this.LineToolsBTN.TabIndex = 0;
             this.LineToolsBTN.UseVisualStyleBackColor = false;
             this.LineToolsBTN.Click += new System.EventHandler(this.LineToolsBTN_Click);
@@ -375,10 +350,9 @@
             this.WidthLineBTN.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("WidthLineBTN.BackgroundImage")));
             this.WidthLineBTN.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.WidthLineBTN.Enabled = false;
-            this.WidthLineBTN.Location = new System.Drawing.Point(1456, 100);
-            this.WidthLineBTN.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.WidthLineBTN.Location = new System.Drawing.Point(971, 65);
             this.WidthLineBTN.Name = "WidthLineBTN";
-            this.WidthLineBTN.Size = new System.Drawing.Size(68, 49);
+            this.WidthLineBTN.Size = new System.Drawing.Size(45, 32);
             this.WidthLineBTN.TabIndex = 6;
             this.WidthLineBTN.UseVisualStyleBackColor = false;
             this.WidthLineBTN.Click += new System.EventHandler(this.WidthLineBTN_Click);
@@ -387,10 +361,9 @@
             // 
             this.btnBorrar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnBorrar.BackgroundImage")));
             this.btnBorrar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnBorrar.Location = new System.Drawing.Point(178, 40);
-            this.btnBorrar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnBorrar.Location = new System.Drawing.Point(119, 26);
             this.btnBorrar.Name = "btnBorrar";
-            this.btnBorrar.Size = new System.Drawing.Size(48, 49);
+            this.btnBorrar.Size = new System.Drawing.Size(32, 32);
             this.btnBorrar.TabIndex = 5;
             this.btnBorrar.UseVisualStyleBackColor = true;
             this.btnBorrar.Click += new System.EventHandler(this.btnBorrar_Click);
@@ -399,22 +372,21 @@
             // 
             this.btnRelleno.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnRelleno.BackgroundImage")));
             this.btnRelleno.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnRelleno.Location = new System.Drawing.Point(122, 40);
-            this.btnRelleno.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnRelleno.Location = new System.Drawing.Point(81, 26);
             this.btnRelleno.Name = "btnRelleno";
-            this.btnRelleno.Size = new System.Drawing.Size(48, 49);
+            this.btnRelleno.Size = new System.Drawing.Size(32, 32);
             this.btnRelleno.TabIndex = 4;
             this.btnRelleno.UseVisualStyleBackColor = true;
+            this.btnRelleno.Click += new System.EventHandler(this.btnRelleno_Click);
             // 
             // btnEscribir
             // 
             this.btnEscribir.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnEscribir.BackgroundImage")));
             this.btnEscribir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnEscribir.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnEscribir.Location = new System.Drawing.Point(64, 40);
-            this.btnEscribir.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnEscribir.Location = new System.Drawing.Point(43, 26);
             this.btnEscribir.Name = "btnEscribir";
-            this.btnEscribir.Size = new System.Drawing.Size(48, 49);
+            this.btnEscribir.Size = new System.Drawing.Size(32, 32);
             this.btnEscribir.TabIndex = 3;
             this.btnEscribir.UseVisualStyleBackColor = true;
             // 
@@ -428,9 +400,9 @@
             this.RedoBTN});
             this.toolStripMenu.Location = new System.Drawing.Point(0, 0);
             this.toolStripMenu.Name = "toolStripMenu";
-            this.toolStripMenu.Padding = new System.Windows.Forms.Padding(0, 0, 3, 0);
+            this.toolStripMenu.Padding = new System.Windows.Forms.Padding(0, 0, 2, 0);
             this.toolStripMenu.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-            this.toolStripMenu.Size = new System.Drawing.Size(1851, 29);
+            this.toolStripMenu.Size = new System.Drawing.Size(913, 27);
             this.toolStripMenu.TabIndex = 9;
             this.toolStripMenu.Text = "toolStripMenu";
             // 
@@ -445,34 +417,34 @@
             this.MenuFile.Image = ((System.Drawing.Image)(resources.GetObject("MenuFile.Image")));
             this.MenuFile.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.MenuFile.Name = "MenuFile";
-            this.MenuFile.Size = new System.Drawing.Size(38, 24);
+            this.MenuFile.Size = new System.Drawing.Size(33, 24);
             this.MenuFile.Text = "Menu";
             // 
             // guardarComo
             // 
             this.guardarComo.Name = "guardarComo";
-            this.guardarComo.Size = new System.Drawing.Size(270, 34);
+            this.guardarComo.Size = new System.Drawing.Size(163, 22);
             this.guardarComo.Text = "Guardar Como";
             this.guardarComo.Click += new System.EventHandler(this.guardarComo_Click);
             // 
             // cargarImagenes
             // 
             this.cargarImagenes.Name = "cargarImagenes";
-            this.cargarImagenes.Size = new System.Drawing.Size(270, 34);
+            this.cargarImagenes.Size = new System.Drawing.Size(163, 22);
             this.cargarImagenes.Text = "Cargar Imagenes";
             this.cargarImagenes.Click += new System.EventHandler(this.cargarImagenes_Click);
             // 
             // Nuevo
             // 
             this.Nuevo.Name = "Nuevo";
-            this.Nuevo.Size = new System.Drawing.Size(270, 34);
+            this.Nuevo.Size = new System.Drawing.Size(163, 22);
             this.Nuevo.Text = "Nuevo";
             this.Nuevo.Click += new System.EventHandler(this.Nuevo_Click);
             // 
             // Salir
             // 
             this.Salir.Name = "Salir";
-            this.Salir.Size = new System.Drawing.Size(270, 34);
+            this.Salir.Size = new System.Drawing.Size(163, 22);
             this.Salir.Text = "Salir";
             // 
             // MenuUndo
@@ -482,7 +454,7 @@
             this.MenuUndo.Image = ((System.Drawing.Image)(resources.GetObject("MenuUndo.Image")));
             this.MenuUndo.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.MenuUndo.Name = "MenuUndo";
-            this.MenuUndo.Size = new System.Drawing.Size(34, 24);
+            this.MenuUndo.Size = new System.Drawing.Size(24, 24);
             this.MenuUndo.Text = "Deshacer";
             // 
             // RedoBTN
@@ -492,14 +464,14 @@
             this.RedoBTN.Image = ((System.Drawing.Image)(resources.GetObject("RedoBTN.Image")));
             this.RedoBTN.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.RedoBTN.Name = "RedoBTN";
-            this.RedoBTN.Size = new System.Drawing.Size(34, 24);
+            this.RedoBTN.Size = new System.Drawing.Size(24, 24);
             this.RedoBTN.Text = "Rehacer";
             // 
             // vScrollBar1
             // 
-            this.vScrollBar1.Location = new System.Drawing.Point(21, 292);
+            this.vScrollBar1.Location = new System.Drawing.Point(14, 190);
             this.vScrollBar1.Name = "vScrollBar1";
-            this.vScrollBar1.Size = new System.Drawing.Size(26, 475);
+            this.vScrollBar1.Size = new System.Drawing.Size(26, 309);
             this.vScrollBar1.TabIndex = 11;
             // 
             // picCanvasLienzo
@@ -508,10 +480,9 @@
             this.picCanvasLienzo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.picCanvasLienzo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.picCanvasLienzo.Image = ((System.Drawing.Image)(resources.GetObject("picCanvasLienzo.Image")));
-            this.picCanvasLienzo.Location = new System.Drawing.Point(80, 254);
-            this.picCanvasLienzo.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.picCanvasLienzo.Location = new System.Drawing.Point(53, 165);
             this.picCanvasLienzo.Name = "picCanvasLienzo";
-            this.picCanvasLienzo.Size = new System.Drawing.Size(1736, 744);
+            this.picCanvasLienzo.Size = new System.Drawing.Size(1158, 484);
             this.picCanvasLienzo.TabIndex = 12;
             this.picCanvasLienzo.TabStop = false;
             this.picCanvasLienzo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.picCanvasLienzo_MouseDown);
@@ -525,9 +496,11 @@
             this.groupBox1.Controls.Add(this.btnEscribir);
             this.groupBox1.Controls.Add(this.btnRelleno);
             this.groupBox1.Controls.Add(this.btnBorrar);
-            this.groupBox1.Location = new System.Drawing.Point(474, 45);
+            this.groupBox1.Location = new System.Drawing.Point(316, 29);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(274, 180);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Size = new System.Drawing.Size(183, 117);
             this.groupBox1.TabIndex = 13;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Herramientas";
@@ -536,10 +509,9 @@
             // 
             this.btnLimpiarTodo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnLimpiarTodo.BackgroundImage")));
             this.btnLimpiarTodo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnLimpiarTodo.Location = new System.Drawing.Point(8, 108);
-            this.btnLimpiarTodo.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnLimpiarTodo.Location = new System.Drawing.Point(5, 70);
             this.btnLimpiarTodo.Name = "btnLimpiarTodo";
-            this.btnLimpiarTodo.Size = new System.Drawing.Size(48, 49);
+            this.btnLimpiarTodo.Size = new System.Drawing.Size(32, 32);
             this.btnLimpiarTodo.TabIndex = 16;
             this.btnLimpiarTodo.UseVisualStyleBackColor = true;
             this.btnLimpiarTodo.Click += new System.EventHandler(this.button1_Click);
@@ -549,10 +521,9 @@
             this.btnLapiz.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnLapiz.BackgroundImage")));
             this.btnLapiz.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnLapiz.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnLapiz.Location = new System.Drawing.Point(8, 40);
-            this.btnLapiz.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnLapiz.Location = new System.Drawing.Point(5, 26);
             this.btnLapiz.Name = "btnLapiz";
-            this.btnLapiz.Size = new System.Drawing.Size(48, 49);
+            this.btnLapiz.Size = new System.Drawing.Size(32, 32);
             this.btnLapiz.TabIndex = 6;
             this.btnLapiz.UseVisualStyleBackColor = true;
             this.btnLapiz.Click += new System.EventHandler(this.btnLapiz_Click);
@@ -567,9 +538,11 @@
             this.groupTamanioOpcion.Controls.Add(this.Line4BTN);
             this.groupTamanioOpcion.Controls.Add(this.Line3BTN);
             this.groupTamanioOpcion.Controls.Add(this.Line1BTN);
-            this.groupTamanioOpcion.Location = new System.Drawing.Point(1556, 100);
+            this.groupTamanioOpcion.Location = new System.Drawing.Point(1037, 65);
+            this.groupTamanioOpcion.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupTamanioOpcion.Name = "groupTamanioOpcion";
-            this.groupTamanioOpcion.Size = new System.Drawing.Size(261, 202);
+            this.groupTamanioOpcion.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupTamanioOpcion.Size = new System.Drawing.Size(174, 131);
             this.groupTamanioOpcion.TabIndex = 14;
             this.groupTamanioOpcion.TabStop = false;
             this.groupTamanioOpcion.Visible = false;
@@ -578,9 +551,10 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(219, 163);
+            this.label4.Location = new System.Drawing.Point(146, 106);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(37, 20);
+            this.label4.Size = new System.Drawing.Size(27, 13);
             this.label4.TabIndex = 7;
             this.label4.Text = "8px";
             // 
@@ -588,9 +562,10 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(219, 114);
+            this.label3.Location = new System.Drawing.Point(146, 74);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(37, 20);
+            this.label3.Size = new System.Drawing.Size(27, 13);
             this.label3.TabIndex = 6;
             this.label3.Text = "5px";
             // 
@@ -598,9 +573,10 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(219, 75);
+            this.label2.Location = new System.Drawing.Point(146, 49);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(37, 20);
+            this.label2.Size = new System.Drawing.Size(27, 13);
             this.label2.TabIndex = 5;
             this.label2.Text = "3px";
             // 
@@ -608,28 +584,30 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(219, 32);
+            this.label1.Location = new System.Drawing.Point(146, 21);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(37, 20);
+            this.label1.Size = new System.Drawing.Size(27, 13);
             this.label1.TabIndex = 4;
             this.label1.Text = "1px";
             // 
             // JymaLogo
             // 
             this.JymaLogo.Image = ((System.Drawing.Image)(resources.GetObject("JymaLogo.Image")));
-            this.JymaLogo.Location = new System.Drawing.Point(80, 92);
+            this.JymaLogo.Location = new System.Drawing.Point(53, 60);
+            this.JymaLogo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.JymaLogo.Name = "JymaLogo";
-            this.JymaLogo.Size = new System.Drawing.Size(366, 120);
+            this.JymaLogo.Size = new System.Drawing.Size(244, 78);
             this.JymaLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.JymaLogo.TabIndex = 15;
             this.JymaLogo.TabStop = false;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ClientSize = new System.Drawing.Size(1851, 1017);
+            this.ClientSize = new System.Drawing.Size(913, 487);
             this.Controls.Add(this.JymaLogo);
             this.Controls.Add(this.groupTamanioOpcion);
             this.Controls.Add(this.groupBox1);
@@ -640,6 +618,7 @@
             this.Controls.Add(this.ColorBox);
             this.Controls.Add(this.groupBoxForTools);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form1";
             this.Text = "Paint";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

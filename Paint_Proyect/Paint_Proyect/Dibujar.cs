@@ -1,4 +1,5 @@
-﻿using System.Drawing;
+﻿using System.Collections.Generic;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace Paint_Proyect
@@ -31,11 +32,8 @@ namespace Paint_Proyect
         }
 
         public void ActivarLapiz() => lapizActivo = true;
-
         public void DesactivarLapiz() => lapizActivo = false;
-
         public void ToggleLapiz() => lapizActivo = !lapizActivo;
-
         public bool IsActive() => lapizActivo;
 
         public void IniciarDibujo(MouseEventArgs e)
@@ -74,7 +72,6 @@ namespace Paint_Proyect
         }
 
         public void CambiarColor(Color color) => pen.Color = color;
-
         public void CambiarGrosor(float grosor) => pen.Width = grosor;
 
         public void LimpiarLienzo()
@@ -100,7 +97,63 @@ namespace Paint_Proyect
 
             RefreshPictureBox();
         }
+        public Color GetColor()
+        {
+            return pen.Color; // Aquí devolvemos el color actual del lápiz
+        }
+
+
+
+        // Función de relleno (Balde de pintura)
+        public void RellenarArea(Point puntoInicio, Color colorRelleno)
+        {
+            // Asegurémonos de que el clic esté dentro de los límites del lienzo
+            if (puntoInicio.X < 0 || puntoInicio.Y < 0 || puntoInicio.X >= bitmap.Width || puntoInicio.Y >= bitmap.Height)
+            {
+                MessageBox.Show("El clic está fuera del área del lienzo.");
+                return;
+            }
+
+            // Obtener el color original del punto de inicio
+            Color colorOriginal = bitmap.GetPixel(puntoInicio.X, puntoInicio.Y);
+
+            // Si el color de la zona es igual al color de relleno, no hacemos nada
+            if (colorOriginal == colorRelleno)
+            {
+                MessageBox.Show("El color de inicio ya es el mismo que el color de relleno.");
+                return;
+            }
+
+            // Cola para rellenar los puntos
+            Queue<Point> puntosPorRellenar = new Queue<Point>();
+            puntosPorRellenar.Enqueue(puntoInicio);
+
+            // Rellenamos el área cerrada
+            while (puntosPorRellenar.Count > 0)
+            {
+                Point punto = puntosPorRellenar.Dequeue();
+
+                if (bitmap.GetPixel(punto.X, punto.Y) == colorOriginal)
+                {
+                    bitmap.SetPixel(punto.X, punto.Y, colorRelleno); // Rellenamos el punto
+
+                    // Añadir puntos adyacentes
+                    if (punto.X > 0) puntosPorRellenar.Enqueue(new Point(punto.X - 1, punto.Y)); // Izquierda
+                    if (punto.X < bitmap.Width - 1) puntosPorRellenar.Enqueue(new Point(punto.X + 1, punto.Y)); // Derecha
+                    if (punto.Y > 0) puntosPorRellenar.Enqueue(new Point(punto.X, punto.Y - 1)); // Arriba
+                    if (punto.Y < bitmap.Height - 1) puntosPorRellenar.Enqueue(new Point(punto.X, punto.Y + 1)); // Abajo
+                }
+            }
+
+            // Actualizamos la imagen en el PictureBox
+            RefreshPictureBox();
+            MessageBox.Show("Relleno completado.");
+        }
+
+
+
+
+
 
     }
-
 }
