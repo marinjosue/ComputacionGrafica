@@ -15,6 +15,8 @@ namespace Paint_Proyect
 
 
         private Dibujar classDibujar;
+        private bool borrarActivo = false;
+
         public Form1()
         {
             InitializeComponent();
@@ -69,11 +71,40 @@ namespace Paint_Proyect
             picCanvasLienzo.Cursor = Cursors.Default;
         }
 
+        private void btnLapiz_Click(object sender, EventArgs e)
+        {
+            classDibujar.ToggleLapiz(); // Activa la herramienta lápiz
+
+        }
+
         private void ColorBTN1_Click(object sender, EventArgs e)
         {
             Button btn = (Button)sender;
             classDibujar.CambiarColor(btn.BackColor);
         }
 
+        private void btnBorrar_Click(object sender, EventArgs e)
+        {
+            // Obtener las coordenadas del cursor en el momento del clic
+            Point puntoClic = this.PointToClient(Cursor.Position);
+
+            // Crear un objeto MouseEventArgs simulado con las coordenadas del clic
+            MouseEventArgs mouseEventArgs = new MouseEventArgs(
+                MouseButtons.Left, // Simular un clic izquierdo
+                1, // Número de clics
+                puntoClic.X,
+                puntoClic.Y,
+                0); // Número de ruedas
+
+            // Llamar a la función BorrarEnLinea con el MouseEventArgs simulado
+            classDibujar.BorrarEnLinea(sender, mouseEventArgs);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            classDibujar.LimpiarLienzo(); // Limpiar Lienzo activo
+            MessageBox.Show("Lienzo Limpio");
+                    
+        }
     }
 }

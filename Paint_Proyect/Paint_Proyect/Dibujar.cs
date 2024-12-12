@@ -15,6 +15,7 @@ namespace Paint_Proyect
         private int x = -1;
         private int y = -1;
         private bool movimiento = false;
+        private bool lapizActivo = false;
 
         public Dibujar(Graphics graphics)
         {
@@ -27,16 +28,32 @@ namespace Paint_Proyect
             g.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
         }
 
+        public void ActivarLapiz()
+        {
+            lapizActivo = true;
+        }
+
+        public void DesactivarLapiz()
+        {
+            lapizActivo = false;
+        }
+        public void ToggleLapiz()
+        {
+            lapizActivo = !lapizActivo;
+        }
         public void IniciarDibujo(MouseEventArgs e)
         {
-            movimiento = true;
-            x = e.X;
-            y = e.Y;
+            if (lapizActivo)
+            {
+                movimiento = true;
+                x = e.X;
+                y = e.Y;
+            }
         }
 
         public void DibujarLinea(MouseEventArgs e)
         {
-            if (movimiento && x != -1 && y != -1)
+            if (movimiento && lapizActivo && x != -1 && y != -1)
             {
                 g.DrawLine(pen, new Point(x, y), e.Location);
                 x = e.X;
@@ -44,17 +61,31 @@ namespace Paint_Proyect
             }
         }
 
+
+
+        public void BorrarEnLinea(object sender, MouseEventArgs e)
+        {
+            pen.Color= Color.White;
+        }
+
         public void TerminarDibujo()
         {
-            movimiento = false;
-            x = -1;
-            y = -1;
+            if (lapizActivo)
+            {
+                movimiento = false;
+                x = -1;
+                y = -1;
+            }
         }
 
         public void CambiarColor(Color color)
         {
             pen.Color = color;
         }
-    }
-    }
 
+        public void LimpiarLienzo()
+        {
+            g.Clear(Color.White); // Limpia todo el lienzo
+        }
+    }
+}

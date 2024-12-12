@@ -53,9 +53,9 @@
             this.CuadradoBtn = new System.Windows.Forms.Button();
             this.LineToolsBTN = new System.Windows.Forms.Button();
             this.WidthLineBTN = new System.Windows.Forms.Button();
-            this.RubberToolsBTN = new System.Windows.Forms.Button();
-            this.FillToolsBTN = new System.Windows.Forms.Button();
-            this.TextToolsBTN = new System.Windows.Forms.Button();
+            this.btnBorrar = new System.Windows.Forms.Button();
+            this.btnRelleno = new System.Windows.Forms.Button();
+            this.btnEscribir = new System.Windows.Forms.Button();
             this.toolStripMenu = new System.Windows.Forms.ToolStrip();
             this.MenuFile = new System.Windows.Forms.ToolStripDropDownButton();
             this.guardarComo = new System.Windows.Forms.ToolStripMenuItem();
@@ -70,13 +70,14 @@
             this.vScrollBar1 = new System.Windows.Forms.VScrollBar();
             this.picCanvasLienzo = new System.Windows.Forms.PictureBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnLapiz = new System.Windows.Forms.Button();
             this.groupTamanioOpcion = new System.Windows.Forms.GroupBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.JymaLogo = new System.Windows.Forms.PictureBox();
+            this.btnLimpiarTodo = new System.Windows.Forms.Button();
             this.ColorBox.SuspendLayout();
             this.groupBoxForTools.SuspendLayout();
             this.toolStripMenu.SuspendLayout();
@@ -359,36 +360,37 @@
             this.WidthLineBTN.UseVisualStyleBackColor = false;
             this.WidthLineBTN.Click += new System.EventHandler(this.WidthLineBTN_Click);
             // 
-            // RubberToolsBTN
+            // btnBorrar
             // 
-            this.RubberToolsBTN.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("RubberToolsBTN.BackgroundImage")));
-            this.RubberToolsBTN.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.RubberToolsBTN.Location = new System.Drawing.Point(134, 25);
-            this.RubberToolsBTN.Name = "RubberToolsBTN";
-            this.RubberToolsBTN.Size = new System.Drawing.Size(32, 32);
-            this.RubberToolsBTN.TabIndex = 5;
-            this.RubberToolsBTN.UseVisualStyleBackColor = true;
+            this.btnBorrar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnBorrar.BackgroundImage")));
+            this.btnBorrar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnBorrar.Location = new System.Drawing.Point(119, 26);
+            this.btnBorrar.Name = "btnBorrar";
+            this.btnBorrar.Size = new System.Drawing.Size(32, 32);
+            this.btnBorrar.TabIndex = 5;
+            this.btnBorrar.UseVisualStyleBackColor = true;
+            this.btnBorrar.Click += new System.EventHandler(this.btnBorrar_Click);
             // 
-            // FillToolsBTN
+            // btnRelleno
             // 
-            this.FillToolsBTN.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("FillToolsBTN.BackgroundImage")));
-            this.FillToolsBTN.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.FillToolsBTN.Location = new System.Drawing.Point(87, 26);
-            this.FillToolsBTN.Name = "FillToolsBTN";
-            this.FillToolsBTN.Size = new System.Drawing.Size(32, 32);
-            this.FillToolsBTN.TabIndex = 4;
-            this.FillToolsBTN.UseVisualStyleBackColor = true;
+            this.btnRelleno.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnRelleno.BackgroundImage")));
+            this.btnRelleno.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnRelleno.Location = new System.Drawing.Point(81, 26);
+            this.btnRelleno.Name = "btnRelleno";
+            this.btnRelleno.Size = new System.Drawing.Size(32, 32);
+            this.btnRelleno.TabIndex = 4;
+            this.btnRelleno.UseVisualStyleBackColor = true;
             // 
-            // TextToolsBTN
+            // btnEscribir
             // 
-            this.TextToolsBTN.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("TextToolsBTN.BackgroundImage")));
-            this.TextToolsBTN.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.TextToolsBTN.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.TextToolsBTN.Location = new System.Drawing.Point(42, 26);
-            this.TextToolsBTN.Name = "TextToolsBTN";
-            this.TextToolsBTN.Size = new System.Drawing.Size(32, 32);
-            this.TextToolsBTN.TabIndex = 3;
-            this.TextToolsBTN.UseVisualStyleBackColor = true;
+            this.btnEscribir.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnEscribir.BackgroundImage")));
+            this.btnEscribir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnEscribir.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnEscribir.Location = new System.Drawing.Point(43, 26);
+            this.btnEscribir.Name = "btnEscribir";
+            this.btnEscribir.Size = new System.Drawing.Size(32, 32);
+            this.btnEscribir.TabIndex = 3;
+            this.btnEscribir.UseVisualStyleBackColor = true;
             // 
             // toolStripMenu
             // 
@@ -509,29 +511,31 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.button1);
-            this.groupBox1.Controls.Add(this.TextToolsBTN);
-            this.groupBox1.Controls.Add(this.FillToolsBTN);
-            this.groupBox1.Controls.Add(this.RubberToolsBTN);
-            this.groupBox1.Location = new System.Drawing.Point(316, 57);
+            this.groupBox1.Controls.Add(this.btnLimpiarTodo);
+            this.groupBox1.Controls.Add(this.btnLapiz);
+            this.groupBox1.Controls.Add(this.btnEscribir);
+            this.groupBox1.Controls.Add(this.btnRelleno);
+            this.groupBox1.Controls.Add(this.btnBorrar);
+            this.groupBox1.Location = new System.Drawing.Point(316, 29);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox1.Size = new System.Drawing.Size(183, 89);
+            this.groupBox1.Size = new System.Drawing.Size(183, 117);
             this.groupBox1.TabIndex = 13;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Herramientas";
             // 
-            // button1
+            // btnLapiz
             // 
-            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button1.Location = new System.Drawing.Point(5, 26);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(32, 32);
-            this.button1.TabIndex = 6;
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnLapiz.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnLapiz.BackgroundImage")));
+            this.btnLapiz.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnLapiz.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnLapiz.Location = new System.Drawing.Point(5, 26);
+            this.btnLapiz.Name = "btnLapiz";
+            this.btnLapiz.Size = new System.Drawing.Size(32, 32);
+            this.btnLapiz.TabIndex = 6;
+            this.btnLapiz.UseVisualStyleBackColor = true;
+            this.btnLapiz.Click += new System.EventHandler(this.btnLapiz_Click);
             // 
             // groupTamanioOpcion
             // 
@@ -608,6 +612,17 @@
             this.JymaLogo.TabIndex = 15;
             this.JymaLogo.TabStop = false;
             // 
+            // btnLimpiarTodo
+            // 
+            this.btnLimpiarTodo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnLimpiarTodo.BackgroundImage")));
+            this.btnLimpiarTodo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnLimpiarTodo.Location = new System.Drawing.Point(5, 70);
+            this.btnLimpiarTodo.Name = "btnLimpiarTodo";
+            this.btnLimpiarTodo.Size = new System.Drawing.Size(32, 32);
+            this.btnLimpiarTodo.TabIndex = 16;
+            this.btnLimpiarTodo.UseVisualStyleBackColor = true;
+            this.btnLimpiarTodo.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -664,9 +679,9 @@
         private System.Windows.Forms.Button leftChoiceBTN;
         private System.Windows.Forms.GroupBox groupBoxForTools;
         private System.Windows.Forms.Button WidthLineBTN;
-        private System.Windows.Forms.Button RubberToolsBTN;
-        private System.Windows.Forms.Button FillToolsBTN;
-        private System.Windows.Forms.Button TextToolsBTN;
+        private System.Windows.Forms.Button btnBorrar;
+        private System.Windows.Forms.Button btnRelleno;
+        private System.Windows.Forms.Button btnEscribir;
         private System.Windows.Forms.Button ElipseToolsBTN;
         private System.Windows.Forms.Button CuadradoBtn;
         private System.Windows.Forms.Button LineToolsBTN;
@@ -684,7 +699,7 @@
         private System.Windows.Forms.PictureBox picCanvasLienzo;
         private System.Windows.Forms.Button EstrellaBtn;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnLapiz;
         private System.Windows.Forms.GroupBox groupTamanioOpcion;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label4;
@@ -692,6 +707,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ToolStripMenuItem imagenBMP;
         private System.Windows.Forms.PictureBox JymaLogo;
+        private System.Windows.Forms.Button btnLimpiarTodo;
     }
 }
 
