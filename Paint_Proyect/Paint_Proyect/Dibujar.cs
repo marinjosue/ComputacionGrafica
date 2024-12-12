@@ -13,7 +13,11 @@ namespace Paint_Proyect
         private int y = -1;
         private bool movimiento = false;
         private bool lapizActivo = false;
+        private bool borradorActivo = false;
         private PictureBox pictureBox;
+
+        private Stack<Bitmap> undoStack = new Stack<Bitmap>(); // Historial para deshacer
+        private Stack<Bitmap> redoStack = new Stack<Bitmap>(); // Historial para rehacer
 
         public Dibujar(PictureBox pictureBox)
         {
@@ -31,14 +35,55 @@ namespace Paint_Proyect
             pictureBox.Image = bitmap;
         }
 
-        public void ActivarLapiz() => lapizActivo = true;
-        public void DesactivarLapiz() => lapizActivo = false;
-        public void ToggleLapiz() => lapizActivo = !lapizActivo;
-        public bool IsActive() => lapizActivo;
+        public void GuardarEstado()
+        {
+            // Guarda el estado actual en la pila de deshacer
+            undoStack.Push((Bitmap)bitmap.Clone());
+            redoStack.Clear(); // Limpiar el historial de rehacer
+        }
+
+        public void Deshacer()
+        {
+            if (undoStack.Count > 0)
+            {
+                // Guarda el estado actual en la pila de rehacer
+                redoStack.Push((Bitmap)bitmap.Clone());
+                // Restaura el último estado de la pila de deshacer
+                bitmap = undoStack.Pop();
+                g = Graphics.FromImage(bitmap);
+                RefreshPictureBox();
+            }
+        }
+
+        public void Rehacer()
+        {
+            if (redoStack.Count > 0)
+            {
+                // Guarda el estado actual en la pila de deshacer
+                undoStack.Push((Bitmap)bitmap.Clone());
+                // Restaura el último estado de la pila de rehacer
+                bitmap = redoStack.Pop();
+                g = Graphics.FromImage(bitmap);
+                RefreshPictureBox();
+            }
+        }
+
+        public void ActivarLapiz()
+        {
+            lapizActivo = true;
+            borradorActivo = false;
+        }
+
+        public void ActivarBorrador()
+        {
+            borradorActivo = true;
+            lapizActivo = false;
+        }
 
         public void IniciarDibujo(MouseEventArgs e)
         {
-            if (!lapizActivo) return;
+            if (!lapizActivo && !borradorActivo) return;
+            GuardarEstado(); // Guarda el estado antes de comenzar a dibujar
             movimiento = true;
             x = e.X;
             y = e.Y;
@@ -46,22 +91,25 @@ namespace Paint_Proyect
 
         public void DibujarLinea(MouseEventArgs e)
         {
-            if (!movimiento || !lapizActivo || x == -1 || y == -1) return;
 
-            g.DrawLine(pen, new Point(x, y), e.Location);
+
+            if (!movimiento || (x == -1 || y == -1)) return;
+
+            if (borradorActivo)
+            {
+                var originalColor = pen.Color;
+                pen.Color = Color.White;
+                g.DrawLine(pen, new Point(x, y), e.Location);
+                pen.Color = originalColor;
+            }
+            else
+            {
+                g.DrawLine(pen, new Point(x, y), e.Location);
+            }
+
             x = e.X;
             y = e.Y;
             RefreshPictureBox();
-        }
-
-        public void BorrarEnLinea(MouseEventArgs e)
-        {
-            if (!movimiento) return;
-
-            var originalColor = pen.Color;
-            pen.Color = Color.White; // Cambiar color temporalmente para borrar
-            DibujarLinea(e); // Reutilizar lógica
-            pen.Color = originalColor; // Restaurar color original
         }
 
         public void TerminarDibujo()
@@ -71,89 +119,78 @@ namespace Paint_Proyect
             y = -1;
         }
 
-        public void CambiarColor(Color color) => pen.Color = color;
+        public void CambiarColor(Color color)
+        {
+            if (!borradorActivo)
+            {
+                pen.Color = color;
+            }
+        }
+
         public void CambiarGrosor(float grosor) => pen.Width = grosor;
 
         public void LimpiarLienzo()
         {
+            GuardarEstado(); // Guarda el estado antes de limpiar
             g.Clear(Color.White);
             RefreshPictureBox();
         }
 
         private void RefreshPictureBox()
         {
-            pictureBox.Invalidate();
             pictureBox.Image = bitmap;
+            pictureBox.Invalidate();
         }
 
         public Bitmap GetBitmap() => bitmap;
+
         public void AsignarBitmap(Bitmap nuevoBitmap)
         {
             if (nuevoBitmap == null) return;
 
+            GuardarEstado(); // Guarda el estado antes de asignar un nuevo bitmap
             bitmap = nuevoBitmap;
             g = Graphics.FromImage(bitmap);
             g.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
 
             RefreshPictureBox();
         }
-        public Color GetColor()
-        {
-            return pen.Color; // Aquí devolvemos el color actual del lápiz
-        }
 
-
-
-        // Función de relleno (Balde de pintura)
         public void RellenarArea(Point puntoInicio, Color colorRelleno)
         {
-            // Asegurémonos de que el clic esté dentro de los límites del lienzo
-            if (puntoInicio.X < 0 || puntoInicio.Y < 0 || puntoInicio.X >= bitmap.Width || puntoInicio.Y >= bitmap.Height)
+            GuardarEstado(); // Guarda el estado antes de rellenar
+            if (puntoInicio.X < 0 || puntoInicio.Y < 0 ||
+                puntoInicio.X >= bitmap.Width || puntoInicio.Y >= bitmap.Height)
             {
-                MessageBox.Show("El clic está fuera del área del lienzo.");
                 return;
             }
 
-            // Obtener el color original del punto de inicio
             Color colorOriginal = bitmap.GetPixel(puntoInicio.X, puntoInicio.Y);
+            if (colorOriginal.ToArgb() == colorRelleno.ToArgb()) return;
 
-            // Si el color de la zona es igual al color de relleno, no hacemos nada
-            if (colorOriginal == colorRelleno)
+            Queue<Point> puntos = new Queue<Point>();
+            puntos.Enqueue(puntoInicio);
+
+            while (puntos.Count > 0)
             {
-                MessageBox.Show("El color de inicio ya es el mismo que el color de relleno.");
-                return;
-            }
-
-            // Cola para rellenar los puntos
-            Queue<Point> puntosPorRellenar = new Queue<Point>();
-            puntosPorRellenar.Enqueue(puntoInicio);
-
-            // Rellenamos el área cerrada
-            while (puntosPorRellenar.Count > 0)
-            {
-                Point punto = puntosPorRellenar.Dequeue();
-
-                if (bitmap.GetPixel(punto.X, punto.Y) == colorOriginal)
+                Point punto = puntos.Dequeue();
+                if (punto.X < 0 || punto.Y < 0 ||
+                    punto.X >= bitmap.Width || punto.Y >= bitmap.Height)
                 {
-                    bitmap.SetPixel(punto.X, punto.Y, colorRelleno); // Rellenamos el punto
+                    continue;
+                }
 
-                    // Añadir puntos adyacentes
-                    if (punto.X > 0) puntosPorRellenar.Enqueue(new Point(punto.X - 1, punto.Y)); // Izquierda
-                    if (punto.X < bitmap.Width - 1) puntosPorRellenar.Enqueue(new Point(punto.X + 1, punto.Y)); // Derecha
-                    if (punto.Y > 0) puntosPorRellenar.Enqueue(new Point(punto.X, punto.Y - 1)); // Arriba
-                    if (punto.Y < bitmap.Height - 1) puntosPorRellenar.Enqueue(new Point(punto.X, punto.Y + 1)); // Abajo
+                if (bitmap.GetPixel(punto.X, punto.Y).ToArgb() == colorOriginal.ToArgb())
+                {
+                    bitmap.SetPixel(punto.X, punto.Y, colorRelleno);
+                    puntos.Enqueue(new Point(punto.X + 1, punto.Y));
+                    puntos.Enqueue(new Point(punto.X - 1, punto.Y));
+                    puntos.Enqueue(new Point(punto.X, punto.Y + 1));
+                    puntos.Enqueue(new Point(punto.X, punto.Y - 1));
                 }
             }
 
-            // Actualizamos la imagen en el PictureBox
             RefreshPictureBox();
-            MessageBox.Show("Relleno completado.");
         }
-
-
-
-
-
-
     }
 }

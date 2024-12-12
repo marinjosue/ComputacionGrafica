@@ -28,3 +28,13 @@ D:\UNIVERSIDAD\PREGADO\Grafica\Proyecto\ComputacionGrafica\Paint_Proyect\Paint_P
 D:\UNIVERSIDAD\PREGADO\Grafica\Proyecto\ComputacionGrafica\Paint_Proyect\Paint_Proyect\obj\Debug\Paint_Proyect.csproj.CoreCompileInputs.cache
 D:\UNIVERSIDAD\PREGADO\Grafica\Proyecto\ComputacionGrafica\Paint_Proyect\Paint_Proyect\obj\Debug\Paint_Proyect.exe
 D:\UNIVERSIDAD\PREGADO\Grafica\Proyecto\ComputacionGrafica\Paint_Proyect\Paint_Proyect\obj\Debug\Paint_Proyect.pdb
+C:\Users\marin\Downloads\Paint_Proyect\Paint_Proyect\Paint_Proyect\obj\Debug\Paint_Proyect.csproj.AssemblyReference.cache
+C:\Users\marin\Downloads\Paint_Proyect\Paint_Proyect\Paint_Proyect\obj\Debug\Paint_Proyect.exe
+C:\Users\marin\Downloads\Paint_Proyect\Paint_Proyect\Paint_Proyect\obj\Debug\Paint_Proyect.pdb
+C:\Users\marin\Downloads\Paint_Proyect\Paint_Proyect\Paint_Proyect\bin\Debug\Paint_Proyect.exe.config
+C:\Users\marin\Downloads\Paint_Proyect\Paint_Proyect\Paint_Proyect\bin\Debug\Paint_Proyect.exe
+C:\Users\marin\Downloads\Paint_Proyect\Paint_Proyect\Paint_Proyect\bin\Debug\Paint_Proyect.pdb
+C:\Users\marin\Downloads\Paint_Proyect\Paint_Proyect\Paint_Proyect\obj\Debug\Paint_Proyect.Form1.resources
+C:\Users\marin\Downloads\Paint_Proyect\Paint_Proyect\Paint_Proyect\obj\Debug\Paint_Proyect.Properties.Resources.resources
+C:\Users\marin\Downloads\Paint_Proyect\Paint_Proyect\Paint_Proyect\obj\Debug\Paint_Proyect.csproj.GenerateResource.cache
+C:\Users\marin\Downloads\Paint_Proyect\Paint_Proyect\Paint_Proyect\obj\Debug\Paint_Proyect.csproj.CoreCompileInputs.cache
