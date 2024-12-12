@@ -59,9 +59,6 @@
             this.toolStripMenu = new System.Windows.Forms.ToolStrip();
             this.MenuFile = new System.Windows.Forms.ToolStripDropDownButton();
             this.guardarComo = new System.Windows.Forms.ToolStripMenuItem();
-            this.imagenPNG = new System.Windows.Forms.ToolStripMenuItem();
-            this.imagenJPEG = new System.Windows.Forms.ToolStripMenuItem();
-            this.imagenBMP = new System.Windows.Forms.ToolStripMenuItem();
             this.cargarImagenes = new System.Windows.Forms.ToolStripMenuItem();
             this.Nuevo = new System.Windows.Forms.ToolStripMenuItem();
             this.Salir = new System.Windows.Forms.ToolStripMenuItem();
@@ -70,6 +67,7 @@
             this.vScrollBar1 = new System.Windows.Forms.VScrollBar();
             this.picCanvasLienzo = new System.Windows.Forms.PictureBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnLimpiarTodo = new System.Windows.Forms.Button();
             this.btnLapiz = new System.Windows.Forms.Button();
             this.groupTamanioOpcion = new System.Windows.Forms.GroupBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -77,7 +75,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.JymaLogo = new System.Windows.Forms.PictureBox();
-            this.btnLimpiarTodo = new System.Windows.Forms.Button();
             this.ColorBox.SuspendLayout();
             this.groupBoxForTools.SuspendLayout();
             this.toolStripMenu.SuspendLayout();
@@ -380,6 +377,7 @@
             this.btnRelleno.Size = new System.Drawing.Size(32, 32);
             this.btnRelleno.TabIndex = 4;
             this.btnRelleno.UseVisualStyleBackColor = true;
+            this.btnRelleno.Click += new System.EventHandler(this.btnRelleno_Click);
             // 
             // btnEscribir
             // 
@@ -402,8 +400,9 @@
             this.RedoBTN});
             this.toolStripMenu.Location = new System.Drawing.Point(0, 0);
             this.toolStripMenu.Name = "toolStripMenu";
+            this.toolStripMenu.Padding = new System.Windows.Forms.Padding(0, 0, 2, 0);
             this.toolStripMenu.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-            this.toolStripMenu.Size = new System.Drawing.Size(1234, 27);
+            this.toolStripMenu.Size = new System.Drawing.Size(913, 27);
             this.toolStripMenu.TabIndex = 9;
             this.toolStripMenu.Text = "toolStripMenu";
             // 
@@ -423,43 +422,24 @@
             // 
             // guardarComo
             // 
-            this.guardarComo.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.imagenPNG,
-            this.imagenJPEG,
-            this.imagenBMP});
             this.guardarComo.Name = "guardarComo";
             this.guardarComo.Size = new System.Drawing.Size(163, 22);
             this.guardarComo.Text = "Guardar Como";
-            // 
-            // imagenPNG
-            // 
-            this.imagenPNG.Name = "imagenPNG";
-            this.imagenPNG.Size = new System.Drawing.Size(142, 22);
-            this.imagenPNG.Text = "Imagen PNG";
-            // 
-            // imagenJPEG
-            // 
-            this.imagenJPEG.Name = "imagenJPEG";
-            this.imagenJPEG.Size = new System.Drawing.Size(142, 22);
-            this.imagenJPEG.Text = "Imagen JPEG";
-            // 
-            // imagenBMP
-            // 
-            this.imagenBMP.Name = "imagenBMP";
-            this.imagenBMP.Size = new System.Drawing.Size(142, 22);
-            this.imagenBMP.Text = "Imagen BMP";
+            this.guardarComo.Click += new System.EventHandler(this.guardarComo_Click);
             // 
             // cargarImagenes
             // 
             this.cargarImagenes.Name = "cargarImagenes";
             this.cargarImagenes.Size = new System.Drawing.Size(163, 22);
             this.cargarImagenes.Text = "Cargar Imagenes";
+            this.cargarImagenes.Click += new System.EventHandler(this.cargarImagenes_Click);
             // 
             // Nuevo
             // 
             this.Nuevo.Name = "Nuevo";
             this.Nuevo.Size = new System.Drawing.Size(163, 22);
             this.Nuevo.Text = "Nuevo";
+            this.Nuevo.Click += new System.EventHandler(this.Nuevo_Click);
             // 
             // Salir
             // 
@@ -517,13 +497,24 @@
             this.groupBox1.Controls.Add(this.btnRelleno);
             this.groupBox1.Controls.Add(this.btnBorrar);
             this.groupBox1.Location = new System.Drawing.Point(316, 29);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox1.Size = new System.Drawing.Size(183, 117);
             this.groupBox1.TabIndex = 13;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Herramientas";
+            // 
+            // btnLimpiarTodo
+            // 
+            this.btnLimpiarTodo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnLimpiarTodo.BackgroundImage")));
+            this.btnLimpiarTodo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnLimpiarTodo.Location = new System.Drawing.Point(5, 70);
+            this.btnLimpiarTodo.Name = "btnLimpiarTodo";
+            this.btnLimpiarTodo.Size = new System.Drawing.Size(32, 32);
+            this.btnLimpiarTodo.TabIndex = 16;
+            this.btnLimpiarTodo.UseVisualStyleBackColor = true;
+            this.btnLimpiarTodo.Click += new System.EventHandler(this.button1_Click);
             // 
             // btnLapiz
             // 
@@ -548,9 +539,9 @@
             this.groupTamanioOpcion.Controls.Add(this.Line3BTN);
             this.groupTamanioOpcion.Controls.Add(this.Line1BTN);
             this.groupTamanioOpcion.Location = new System.Drawing.Point(1037, 65);
-            this.groupTamanioOpcion.Margin = new System.Windows.Forms.Padding(2);
+            this.groupTamanioOpcion.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupTamanioOpcion.Name = "groupTamanioOpcion";
-            this.groupTamanioOpcion.Padding = new System.Windows.Forms.Padding(2);
+            this.groupTamanioOpcion.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupTamanioOpcion.Size = new System.Drawing.Size(174, 131);
             this.groupTamanioOpcion.TabIndex = 14;
             this.groupTamanioOpcion.TabStop = false;
@@ -599,36 +590,24 @@
             this.label1.Size = new System.Drawing.Size(27, 13);
             this.label1.TabIndex = 4;
             this.label1.Text = "1px";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // JymaLogo
             // 
             this.JymaLogo.Image = ((System.Drawing.Image)(resources.GetObject("JymaLogo.Image")));
             this.JymaLogo.Location = new System.Drawing.Point(53, 60);
-            this.JymaLogo.Margin = new System.Windows.Forms.Padding(2);
+            this.JymaLogo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.JymaLogo.Name = "JymaLogo";
             this.JymaLogo.Size = new System.Drawing.Size(244, 78);
             this.JymaLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.JymaLogo.TabIndex = 15;
             this.JymaLogo.TabStop = false;
             // 
-            // btnLimpiarTodo
-            // 
-            this.btnLimpiarTodo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnLimpiarTodo.BackgroundImage")));
-            this.btnLimpiarTodo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnLimpiarTodo.Location = new System.Drawing.Point(5, 70);
-            this.btnLimpiarTodo.Name = "btnLimpiarTodo";
-            this.btnLimpiarTodo.Size = new System.Drawing.Size(32, 32);
-            this.btnLimpiarTodo.TabIndex = 16;
-            this.btnLimpiarTodo.UseVisualStyleBackColor = true;
-            this.btnLimpiarTodo.Click += new System.EventHandler(this.button1_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ClientSize = new System.Drawing.Size(1234, 661);
+            this.ClientSize = new System.Drawing.Size(913, 487);
             this.Controls.Add(this.JymaLogo);
             this.Controls.Add(this.groupTamanioOpcion);
             this.Controls.Add(this.groupBox1);
@@ -639,7 +618,7 @@
             this.Controls.Add(this.ColorBox);
             this.Controls.Add(this.groupBoxForTools);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form1";
             this.Text = "Paint";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
@@ -688,8 +667,6 @@
         private System.Windows.Forms.ToolStrip toolStripMenu;
         private System.Windows.Forms.ToolStripDropDownButton MenuFile;
         private System.Windows.Forms.ToolStripMenuItem guardarComo;
-        private System.Windows.Forms.ToolStripMenuItem imagenPNG;
-        private System.Windows.Forms.ToolStripMenuItem imagenJPEG;
         private System.Windows.Forms.ToolStripMenuItem cargarImagenes;
         private System.Windows.Forms.ToolStripMenuItem Nuevo;
         private System.Windows.Forms.ToolStripMenuItem Salir;
@@ -705,7 +682,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ToolStripMenuItem imagenBMP;
         private System.Windows.Forms.PictureBox JymaLogo;
         private System.Windows.Forms.Button btnLimpiarTodo;
     }

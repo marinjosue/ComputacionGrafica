@@ -21,6 +21,7 @@ namespace Paint_Proyect
         private EstrellaCincoPuntas estrellaSeleccionada; // Instancia actual de la estrella
         private Cursor originalCursor; // Cursor original para restaurar después
         private Dibujar classDibujar;
+<<<<<<< HEAD
         // Define los diferentes modos del programa
         private int puntoTransformacionIndex = -1; // Índice del punto seleccionado (-1 significa ninguno)
         private bool isMoving = false; // Indica si estamos moviendo la figura
@@ -39,6 +40,17 @@ namespace Paint_Proyect
             InitializeComponent();
             originalCursor = picCanvasLienzo.Cursor;
             classDibujar = new Dibujar(); // Asegúrate de inicializar aquí o en algún momento previo.
+=======
+        private bool borrarActivo = false;
+        private Administrador administrador;
+        private bool estadoRellenoActivo = false;
+        private Color colorSeleccionado = Color.Black;
+        public Form1()
+        {
+            InitializeComponent();
+            classDibujar = new Dibujar(picCanvasLienzo);
+            administrador = new Administrador(picCanvasLienzo, classDibujar);
+>>>>>>> 7b1a32e1a280fc9aaaf52ac3033f804405bb8f0b
         }
 
         private void btnEstrella_Click(object sender, EventArgs e)
@@ -79,6 +91,7 @@ namespace Paint_Proyect
 
         private void picCanvasLienzo_MouseDown(object sender, MouseEventArgs e)
         {
+<<<<<<< HEAD
             if (isDrawing && e.Button == MouseButtons.Left)
             {
                 // Iniciar el dibujo
@@ -112,10 +125,36 @@ namespace Paint_Proyect
                 currentPoint = e.Location;
                 estrellaSeleccionada = new EstrellaCincoPuntas();
             }
+=======
+            if (estadoRellenoActivo)
+            {
+                // Obtener las coordenadas del clic en el lienzo
+                Point puntoInicio = e.Location;
+
+                // Llamar al método de relleno
+                classDibujar.RellenarArea(puntoInicio, colorSeleccionado);
+
+                // Desactivar el estado de relleno después de usarlo
+                estadoRellenoActivo = false;
+            }
+            else
+            {
+                // Si no estamos en modo de relleno, manejamos otras acciones (lapiz, borrador, etc.)
+                if (borrarActivo)
+                {
+                    classDibujar.BorrarEnLinea(e);
+                }
+                else
+                {
+                    classDibujar.IniciarDibujo(e);
+                }
+            }
+>>>>>>> 7b1a32e1a280fc9aaaf52ac3033f804405bb8f0b
         }
 
         private void picCanvasLienzo_MouseMove(object sender, MouseEventArgs e)
         {
+<<<<<<< HEAD
             if (isDrawing)
             {
                 // Actualizar el bounding box
@@ -146,6 +185,15 @@ namespace Paint_Proyect
                 // Código existente para vista previa de dibujo
                 currentPoint = e.Location;
                 RedibujarLienzo(preview: true);
+=======
+            if (borrarActivo)
+            {
+                classDibujar.BorrarEnLinea(e);
+            }
+            else
+            {
+                classDibujar.DibujarLinea(e);
+>>>>>>> 7b1a32e1a280fc9aaaf52ac3033f804405bb8f0b
             }
         }
 
@@ -252,13 +300,16 @@ namespace Paint_Proyect
 
         private void btnLapiz_Click(object sender, EventArgs e)
         {
-            classDibujar.ToggleLapiz(); // Activa la herramienta lápiz
-
+            borrarActivo = false;
+            classDibujar.ToggleLapiz();
+            MessageBox.Show($"Lápiz {(classDibujar.IsActive() ? "Activado" : "Desactivado")}");
         }
+
 
         private void ColorBTN1_Click(object sender, EventArgs e)
         {
             Button btn = (Button)sender;
+<<<<<<< HEAD
 
             if (classDibujar == null)
             {
@@ -267,23 +318,22 @@ namespace Paint_Proyect
             }
 
             classDibujar.CambiarColor(btn.BackColor);
+=======
+            colorSeleccionado = btn.BackColor;
+            MessageBox.Show($"Color seleccionado: {colorSeleccionado.Name}");
+
+            // Verificar si ya estamos en el estado de relleno
+            if (estadoRellenoActivo)
+            {
+                MessageBox.Show("Ahora, haga clic en el área que desea rellenar.");
+            }
+>>>>>>> 7b1a32e1a280fc9aaaf52ac3033f804405bb8f0b
         }
 
         private void btnBorrar_Click(object sender, EventArgs e)
         {
-            // Obtener las coordenadas del cursor en el momento del clic
-            Point puntoClic = this.PointToClient(Cursor.Position);
-
-            // Crear un objeto MouseEventArgs simulado con las coordenadas del clic
-            MouseEventArgs mouseEventArgs = new MouseEventArgs(
-                MouseButtons.Left, // Simular un clic izquierdo
-                1, // Número de clics
-                puntoClic.X,
-                puntoClic.Y,
-                0); // Número de ruedas
-
-            // Llamar a la función BorrarEnLinea con el MouseEventArgs simulado
-            classDibujar.BorrarEnLinea(sender, mouseEventArgs);
+            borrarActivo = true;
+            MessageBox.Show("Herramienta Borrar Activada");
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -293,6 +343,7 @@ namespace Paint_Proyect
                     
         }
 
+<<<<<<< HEAD
         private Rectangle ActualizarBoundingBox(Rectangle rect, int puntoIndex, Point nuevoPunto)
         {
             int left = rect.Left;
@@ -335,5 +386,27 @@ namespace Paint_Proyect
         }
 
 
+=======
+        private void cargarImagenes_Click(object sender, EventArgs e)
+        {
+            administrador.CargarImagen();
+        }
+
+        private void guardarComo_Click(object sender, EventArgs e)
+        {
+            administrador.GuardarImagen();
+        }
+
+        private void Nuevo_Click(object sender, EventArgs e)
+        {
+            classDibujar.LimpiarLienzo();
+        }
+
+        private void btnRelleno_Click(object sender, EventArgs e)
+        {
+            estadoRellenoActivo = true;
+            MessageBox.Show("Por favor, elige un color y luego haz clic en el área que deseas rellenar.");
+        }
+>>>>>>> 7b1a32e1a280fc9aaaf52ac3033f804405bb8f0b
     }
 }
