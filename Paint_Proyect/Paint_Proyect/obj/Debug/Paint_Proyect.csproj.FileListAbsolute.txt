@@ -18,3 +18,13 @@ C:\Users\CellComp\Desktop\ComputacionGrafica\Paint_Proyect\Paint_Proyect\obj\Deb
 C:\Users\CellComp\Desktop\ComputacionGrafica\Paint_Proyect\Paint_Proyect\obj\Debug\Paint_Proyect.csproj.CoreCompileInputs.cache
 C:\Users\CellComp\Desktop\ComputacionGrafica\Paint_Proyect\Paint_Proyect\obj\Debug\Paint_Proyect.exe
 C:\Users\CellComp\Desktop\ComputacionGrafica\Paint_Proyect\Paint_Proyect\obj\Debug\Paint_Proyect.pdb
+E:\ComputacionGrafica\Paint_Proyect\Paint_Proyect\bin\Debug\Paint_Proyect.exe.config
+E:\ComputacionGrafica\Paint_Proyect\Paint_Proyect\bin\Debug\Paint_Proyect.exe
+E:\ComputacionGrafica\Paint_Proyect\Paint_Proyect\bin\Debug\Paint_Proyect.pdb
+E:\ComputacionGrafica\Paint_Proyect\Paint_Proyect\obj\Debug\Paint_Proyect.csproj.AssemblyReference.cache
+E:\ComputacionGrafica\Paint_Proyect\Paint_Proyect\obj\Debug\Paint_Proyect.Form1.resources
+E:\ComputacionGrafica\Paint_Proyect\Paint_Proyect\obj\Debug\Paint_Proyect.Properties.Resources.resources
+E:\ComputacionGrafica\Paint_Proyect\Paint_Proyect\obj\Debug\Paint_Proyect.csproj.GenerateResource.cache
+E:\ComputacionGrafica\Paint_Proyect\Paint_Proyect\obj\Debug\Paint_Proyect.csproj.CoreCompileInputs.cache
+E:\ComputacionGrafica\Paint_Proyect\Paint_Proyect\obj\Debug\Paint_Proyect.exe
+E:\ComputacionGrafica\Paint_Proyect\Paint_Proyect\obj\Debug\Paint_Proyect.pdb

@@ -28,6 +28,10 @@ namespace Paint_Proyect
             g.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
         }
 
+        public Dibujar()
+        {
+        }
+
         public void ActivarLapiz()
         {
             lapizActivo = true;
