@@ -46,12 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
-    <Compile Include="Cuadrado.cs" />
-    <Compile Include="EstrellaCincoPuntas.cs" />
-=======
     <Compile Include="administrador.cs" />
->>>>>>> 7b1a32e1a280fc9aaaf52ac3033f804405bb8f0b
     <Compile Include="Dibujar.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>

@@ -31,21 +31,10 @@ namespace Paint_Proyect
             pictureBox.Image = bitmap;
         }
 
-<<<<<<< HEAD
-        public Dibujar()
-        {
-        }
-
-        public void ActivarLapiz()
-        {
-            lapizActivo = true;
-        }
-=======
         public void ActivarLapiz() => lapizActivo = true;
         public void DesactivarLapiz() => lapizActivo = false;
         public void ToggleLapiz() => lapizActivo = !lapizActivo;
         public bool IsActive() => lapizActivo;
->>>>>>> 7b1a32e1a280fc9aaaf52ac3033f804405bb8f0b
 
         public void IniciarDibujo(MouseEventArgs e)
         {

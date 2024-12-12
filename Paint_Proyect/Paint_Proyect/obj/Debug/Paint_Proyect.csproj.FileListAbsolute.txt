@@ -18,18 +18,6 @@ C:\Users\CellComp\Desktop\ComputacionGrafica\Paint_Proyect\Paint_Proyect\obj\Deb
 C:\Users\CellComp\Desktop\ComputacionGrafica\Paint_Proyect\Paint_Proyect\obj\Debug\Paint_Proyect.csproj.CoreCompileInputs.cache
 C:\Users\CellComp\Desktop\ComputacionGrafica\Paint_Proyect\Paint_Proyect\obj\Debug\Paint_Proyect.exe
 C:\Users\CellComp\Desktop\ComputacionGrafica\Paint_Proyect\Paint_Proyect\obj\Debug\Paint_Proyect.pdb
-<<<<<<< HEAD
-E:\ComputacionGrafica\Paint_Proyect\Paint_Proyect\bin\Debug\Paint_Proyect.exe.config
-E:\ComputacionGrafica\Paint_Proyect\Paint_Proyect\bin\Debug\Paint_Proyect.exe
-E:\ComputacionGrafica\Paint_Proyect\Paint_Proyect\bin\Debug\Paint_Proyect.pdb
-E:\ComputacionGrafica\Paint_Proyect\Paint_Proyect\obj\Debug\Paint_Proyect.csproj.AssemblyReference.cache
-E:\ComputacionGrafica\Paint_Proyect\Paint_Proyect\obj\Debug\Paint_Proyect.Form1.resources
-E:\ComputacionGrafica\Paint_Proyect\Paint_Proyect\obj\Debug\Paint_Proyect.Properties.Resources.resources
-E:\ComputacionGrafica\Paint_Proyect\Paint_Proyect\obj\Debug\Paint_Proyect.csproj.GenerateResource.cache
-E:\ComputacionGrafica\Paint_Proyect\Paint_Proyect\obj\Debug\Paint_Proyect.csproj.CoreCompileInputs.cache
-E:\ComputacionGrafica\Paint_Proyect\Paint_Proyect\obj\Debug\Paint_Proyect.exe
-E:\ComputacionGrafica\Paint_Proyect\Paint_Proyect\obj\Debug\Paint_Proyect.pdb
-=======
 D:\UNIVERSIDAD\PREGADO\Grafica\Proyecto\ComputacionGrafica\Paint_Proyect\Paint_Proyect\bin\Debug\Paint_Proyect.exe.config
 D:\UNIVERSIDAD\PREGADO\Grafica\Proyecto\ComputacionGrafica\Paint_Proyect\Paint_Proyect\bin\Debug\Paint_Proyect.exe
 D:\UNIVERSIDAD\PREGADO\Grafica\Proyecto\ComputacionGrafica\Paint_Proyect\Paint_Proyect\bin\Debug\Paint_Proyect.pdb
@@ -40,4 +28,3 @@ D:\UNIVERSIDAD\PREGADO\Grafica\Proyecto\ComputacionGrafica\Paint_Proyect\Paint_P
 D:\UNIVERSIDAD\PREGADO\Grafica\Proyecto\ComputacionGrafica\Paint_Proyect\Paint_Proyect\obj\Debug\Paint_Proyect.csproj.CoreCompileInputs.cache
 D:\UNIVERSIDAD\PREGADO\Grafica\Proyecto\ComputacionGrafica\Paint_Proyect\Paint_Proyect\obj\Debug\Paint_Proyect.exe
 D:\UNIVERSIDAD\PREGADO\Grafica\Proyecto\ComputacionGrafica\Paint_Proyect\Paint_Proyect\obj\Debug\Paint_Proyect.pdb
->>>>>>> 7b1a32e1a280fc9aaaf52ac3033f804405bb8f0b
