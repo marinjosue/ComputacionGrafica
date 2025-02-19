@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -13,12 +14,18 @@ namespace Paint_Proyect
     public partial class Form1 : Form
     {
 
-
+        Graphics g;
+        Pen p = new Pen(Color.Black, 2);
         private Dibujar classDibujar;
         private bool borrarActivo = false;
         private Administrador administrador;
         private bool estadoRellenoActivo = false;
         private Color colorSeleccionado = Color.Black;
+        // para dibujar 
+        Formas shapeDrawer;
+        int index;
+        int x, y, sX, sY, cX, cY; // Variables para coordenadas
+
 
         public Form1()
         {
@@ -27,26 +34,38 @@ namespace Paint_Proyect
             administrador = new Administrador(picCanvasLienzo, classDibujar);
             this.vScrollBar1 = new System.Windows.Forms.VScrollBar();
             this.vScrollBar1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.vScrollBar1_MouseUp);
+            shapeDrawer = new Formas(g, p);
+
+
         }
 
         private void btnEstrella_Click(object sender, EventArgs e)
         {
             WidthLineBTN.Enabled = true;
+            shapeDrawer = new Formas(g, p);
+            index = 8; // Estrella
         }
 
         private void SquardToolsBTN_Click(object sender, EventArgs e)
         {
             WidthLineBTN.Enabled = true;
+            shapeDrawer = new Formas(g, p);
+            index = 4;
+
         }
 
         private void ElipseToolsBTN_Click(object sender, EventArgs e)
         {
             WidthLineBTN.Enabled = true;
+            shapeDrawer = new Formas(g, p);
+            index = 3; // Círculo
         }
 
         private void LineToolsBTN_Click(object sender, EventArgs e)
         {
             WidthLineBTN.Enabled = true;
+            shapeDrawer = new Formas(g, p);
+            index = 5; // Establecemos el índice para línea
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -87,8 +106,8 @@ namespace Paint_Proyect
         }
         private void btnLapiz_Click(object sender, EventArgs e)
         {
-            classDibujar.ActivarLapiz();
-            MessageBox.Show("Lápiz activado.");
+            shapeDrawer = new Formas(g, p); // Preparamos el dibujador
+            index = 1;
         }
 
 
@@ -97,19 +116,19 @@ namespace Paint_Proyect
             Button btn = (Button)sender;
             colorSeleccionado = btn.BackColor; // Seleccionar el color del botón
             classDibujar.CambiarColor(colorSeleccionado); // Actualizar el color del lápiz
-            MessageBox.Show($"Color seleccionado: {colorSeleccionado.Name}");
         }
 
 
         private void btnBorrar_Click(object sender, EventArgs e)
         {
+
             classDibujar.ActivarBorrador();
-            MessageBox.Show("Borrador activado.");
         }
+
         private void button1_Click(object sender, EventArgs e)
         {
-            classDibujar.LimpiarLienzo(); // Limpiar Lienzo activo
-            MessageBox.Show("Lienzo Limpio");
+            classDibujar.LimpiarLienzo(); 
+      
 
         }
 
@@ -131,7 +150,7 @@ namespace Paint_Proyect
         private void btnRelleno_Click(object sender, EventArgs e)
         {
             estadoRellenoActivo = true;
-            MessageBox.Show("Haga clic en el área que desea rellenar.");
+            
         }
 
 
@@ -156,7 +175,34 @@ namespace Paint_Proyect
         {
             // Mostrar mensaje cuando se suelta el mouse
             float nuevoGrosor = vScrollBar1.Value;
-            MessageBox.Show($"Grosor de línea cambiado a: {nuevoGrosor}");
+        }
+
+        private void btnEscribir_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ButtonColors_Click(object sender, EventArgs e)
+        {
+            using (ColorDialog colorDialog = new ColorDialog())
+            {
+                
+            }
+        }
+        private void DrawShape()
+        {
+            if (index == 3) g.DrawEllipse(p, cX, cY, sX, sY);
+            if (index == 4) g.DrawRectangle(p, cX, cY, sX, sY);
+            if (index == 5) g.DrawLine(p, cX, cY, x, y);
+
+        }
+
+        private void DrawPreview(Graphics g)
+        {
+            if (index == 3) g.DrawEllipse(p, cX, cY, sX, sY);
+            if (index == 4) g.DrawRectangle(p, cX, cY, sX, sY);
+            if (index == 5) g.DrawLine(p, cX, cY, x, y);
+
         }
     }
 }

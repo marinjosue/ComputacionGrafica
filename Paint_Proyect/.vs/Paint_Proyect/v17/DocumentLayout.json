@@ -1,119 +1,139 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\marin\\Downloads\\Paint_Proyect\\Paint_Proyect\\",
+  "WorkspaceRootPath": "D:\\ESPE\\5-6 level\\Grafica\\ComputacionGrafica\\Paint_Proyect\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3E4690A5-E9D7-417A-ADD1-BA574171B504}|Paint_Proyect\\Paint_Proyect.csproj|c:\\users\\marin\\downloads\\paint_proyect\\paint_proyect\\paint_proyect\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3E4690A5-E9D7-417A-ADD1-BA574171B504}|Paint_Proyect\\Paint_Proyect.csproj|solutionrelative:paint_proyect\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3E4690A5-E9D7-417A-ADD1-BA574171B504}|Paint_Proyect\\Paint_Proyect.csproj|C:\\Users\\marin\\Downloads\\Paint_Proyect\\Paint_Proyect\\paint_proyect\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{3E4690A5-E9D7-417A-ADD1-BA574171B504}|Paint_Proyect\\Paint_Proyect.csproj|solutionrelative:paint_proyect\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3E4690A5-E9D7-417A-ADD1-BA574171B504}|Paint_Proyect\\Paint_Proyect.csproj|C:\\Users\\marin\\Downloads\\Paint_Proyect\\Paint_Proyect\\paint_proyect\\dibujar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3E4690A5-E9D7-417A-ADD1-BA574171B504}|Paint_Proyect\\Paint_Proyect.csproj|d:\\espe\\5-6 level\\grafica\\computaciongrafica\\paint_proyect\\paint_proyect\\dibujar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3E4690A5-E9D7-417A-ADD1-BA574171B504}|Paint_Proyect\\Paint_Proyect.csproj|solutionrelative:paint_proyect\\dibujar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3E4690A5-E9D7-417A-ADD1-BA574171B504}|Paint_Proyect\\Paint_Proyect.csproj|C:\\Users\\marin\\Downloads\\Paint_Proyect\\Paint_Proyect\\paint_proyect\\historial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3E4690A5-E9D7-417A-ADD1-BA574171B504}|Paint_Proyect\\Paint_Proyect.csproj|solutionrelative:paint_proyect\\historial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3E4690A5-E9D7-417A-ADD1-BA574171B504}|Paint_Proyect\\Paint_Proyect.csproj|D:\\ESPE\\5-6 level\\Grafica\\ComputacionGrafica\\Paint_Proyect\\paint_proyect\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3E4690A5-E9D7-417A-ADD1-BA574171B504}|Paint_Proyect\\Paint_Proyect.csproj|solutionrelative:paint_proyect\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3E4690A5-E9D7-417A-ADD1-BA574171B504}|Paint_Proyect\\Paint_Proyect.csproj|C:\\Users\\marin\\Downloads\\Paint_Proyect\\Paint_Proyect\\paint_proyect\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3E4690A5-E9D7-417A-ADD1-BA574171B504}|Paint_Proyect\\Paint_Proyect.csproj|D:\\ESPE\\5-6 level\\Grafica\\ComputacionGrafica\\Paint_Proyect\\paint_proyect\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3E4690A5-E9D7-417A-ADD1-BA574171B504}|Paint_Proyect\\Paint_Proyect.csproj|solutionrelative:paint_proyect\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3E4690A5-E9D7-417A-ADD1-BA574171B504}|Paint_Proyect\\Paint_Proyect.csproj|D:\\ESPE\\5-6 level\\Grafica\\ComputacionGrafica\\Paint_Proyect\\paint_proyect\\administrador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3E4690A5-E9D7-417A-ADD1-BA574171B504}|Paint_Proyect\\Paint_Proyect.csproj|solutionrelative:paint_proyect\\administrador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3E4690A5-E9D7-417A-ADD1-BA574171B504}|Paint_Proyect\\Paint_Proyect.csproj|D:\\ESPE\\5-6 level\\Grafica\\ComputacionGrafica\\Paint_Proyect\\paint_proyect\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3E4690A5-E9D7-417A-ADD1-BA574171B504}|Paint_Proyect\\Paint_Proyect.csproj|solutionrelative:paint_proyect\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3E4690A5-E9D7-417A-ADD1-BA574171B504}|Paint_Proyect\\Paint_Proyect.csproj|C:\\Users\\marin\\Downloads\\Paint_Proyect\\Paint_Proyect\\paint_proyect\\administrador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3E4690A5-E9D7-417A-ADD1-BA574171B504}|Paint_Proyect\\Paint_Proyect.csproj|solutionrelative:paint_proyect\\administrador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3E4690A5-E9D7-417A-ADD1-BA574171B504}|Paint_Proyect\\Paint_Proyect.csproj|D:\\ESPE\\5-6 level\\Grafica\\ComputacionGrafica\\Paint_Proyect\\paint_proyect\\formas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3E4690A5-E9D7-417A-ADD1-BA574171B504}|Paint_Proyect\\Paint_Proyect.csproj|solutionrelative:paint_proyect\\formas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3E4690A5-E9D7-417A-ADD1-BA574171B504}|Paint_Proyect\\Paint_Proyect.csproj|D:\\ESPE\\5-6 level\\Grafica\\ComputacionGrafica\\Paint_Proyect\\paint_proyect\\estrellacincopuntas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3E4690A5-E9D7-417A-ADD1-BA574171B504}|Paint_Proyect\\Paint_Proyect.csproj|solutionrelative:paint_proyect\\estrellacincopuntas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
     {
-      "Orientation": 1,
+      "Orientation": 0,
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedHeight": 418,
-          "SelectedChildIndex": 4,
+          "DockedWidth": 213,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Historial.cs",
-              "DocumentMoniker": "C:\\Users\\marin\\Downloads\\Paint_Proyect\\Paint_Proyect\\Paint_Proyect\\Historial.cs",
-              "RelativeDocumentMoniker": "Paint_Proyect\\Historial.cs",
-              "ToolTip": "C:\\Users\\marin\\Downloads\\Paint_Proyect\\Paint_Proyect\\Paint_Proyect\\Historial.cs",
-              "RelativeToolTip": "Paint_Proyect\\Historial.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAQwCsAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-12T06:10:05.091Z"
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "Form1.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\marin\\Downloads\\Paint_Proyect\\Paint_Proyect\\Paint_Proyect\\Form1.Designer.cs",
+              "DocumentMoniker": "D:\\ESPE\\5-6 level\\Grafica\\ComputacionGrafica\\Paint_Proyect\\Paint_Proyect\\Form1.Designer.cs",
               "RelativeDocumentMoniker": "Paint_Proyect\\Form1.Designer.cs",
-              "ToolTip": "C:\\Users\\marin\\Downloads\\Paint_Proyect\\Paint_Proyect\\Paint_Proyect\\Form1.Designer.cs",
+              "ToolTip": "D:\\ESPE\\5-6 level\\Grafica\\ComputacionGrafica\\Paint_Proyect\\Paint_Proyect\\Form1.Designer.cs",
               "RelativeToolTip": "Paint_Proyect\\Form1.Designer.cs",
-              "ViewState": "AgIAAO4BAAAAAAAAAAAEwPgBAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-12T05:30:15.965Z",
+              "WhenOpened": "2024-12-12T09:55:40.134Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Formas.cs",
+              "DocumentMoniker": "D:\\ESPE\\5-6 level\\Grafica\\ComputacionGrafica\\Paint_Proyect\\Paint_Proyect\\Formas.cs",
+              "RelativeDocumentMoniker": "Paint_Proyect\\Formas.cs",
+              "ToolTip": "D:\\ESPE\\5-6 level\\Grafica\\ComputacionGrafica\\Paint_Proyect\\Paint_Proyect\\Formas.cs",
+              "RelativeToolTip": "Paint_Proyect\\Formas.cs",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAYwFkAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-12T09:39:16.491Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "EstrellaCincoPuntas.cs",
+              "DocumentMoniker": "D:\\ESPE\\5-6 level\\Grafica\\ComputacionGrafica\\Paint_Proyect\\Paint_Proyect\\EstrellaCincoPuntas.cs",
+              "RelativeDocumentMoniker": "Paint_Proyect\\EstrellaCincoPuntas.cs",
+              "ToolTip": "D:\\ESPE\\5-6 level\\Grafica\\ComputacionGrafica\\Paint_Proyect\\Paint_Proyect\\EstrellaCincoPuntas.cs",
+              "RelativeToolTip": "Paint_Proyect\\EstrellaCincoPuntas.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAUwDEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-12T07:35:36.202Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "administrador.cs",
+              "DocumentMoniker": "D:\\ESPE\\5-6 level\\Grafica\\ComputacionGrafica\\Paint_Proyect\\Paint_Proyect\\administrador.cs",
+              "RelativeDocumentMoniker": "Paint_Proyect\\administrador.cs",
+              "ToolTip": "D:\\ESPE\\5-6 level\\Grafica\\ComputacionGrafica\\Paint_Proyect\\Paint_Proyect\\administrador.cs",
+              "RelativeToolTip": "Paint_Proyect\\administrador.cs",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAqwGIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-12T05:30:15.921Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Dibujar.cs",
-              "DocumentMoniker": "C:\\Users\\marin\\Downloads\\Paint_Proyect\\Paint_Proyect\\Paint_Proyect\\Dibujar.cs",
-              "RelativeDocumentMoniker": "Paint_Proyect\\Dibujar.cs",
-              "ToolTip": "C:\\Users\\marin\\Downloads\\Paint_Proyect\\Paint_Proyect\\Paint_Proyect\\Dibujar.cs",
-              "RelativeToolTip": "Paint_Proyect\\Dibujar.cs",
-              "ViewState": "AgIAAJ8AAAAAAAAAAAAcwLYAAABZAAAAAAAAAA==",
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "D:\\ESPE\\5-6 level\\Grafica\\ComputacionGrafica\\Paint_Proyect\\Paint_Proyect\\Form1.cs",
+              "RelativeDocumentMoniker": "Paint_Proyect\\Form1.cs",
+              "ToolTip": "D:\\ESPE\\5-6 level\\Grafica\\ComputacionGrafica\\Paint_Proyect\\Paint_Proyect\\Form1.cs [Design]",
+              "RelativeToolTip": "Paint_Proyect\\Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-12T05:30:15.968Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-12T05:30:16.202Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\marin\\Downloads\\Paint_Proyect\\Paint_Proyect\\Paint_Proyect\\Form1.cs",
+              "DocumentMoniker": "D:\\ESPE\\5-6 level\\Grafica\\ComputacionGrafica\\Paint_Proyect\\Paint_Proyect\\Form1.cs",
               "RelativeDocumentMoniker": "Paint_Proyect\\Form1.cs",
-              "ToolTip": "C:\\Users\\marin\\Downloads\\Paint_Proyect\\Paint_Proyect\\Paint_Proyect\\Form1.cs",
+              "ToolTip": "D:\\ESPE\\5-6 level\\Grafica\\ComputacionGrafica\\Paint_Proyect\\Paint_Proyect\\Form1.cs",
               "RelativeToolTip": "Paint_Proyect\\Form1.cs",
-              "ViewState": "AgIAAI0AAAAAAAAAAAAuwJkAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAJMAAAAAAAAAAAAnwJ8AAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-12T05:30:16.084Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "administrador.cs",
-              "DocumentMoniker": "C:\\Users\\marin\\Downloads\\Paint_Proyect\\Paint_Proyect\\Paint_Proyect\\administrador.cs",
-              "RelativeDocumentMoniker": "Paint_Proyect\\administrador.cs",
-              "ToolTip": "C:\\Users\\marin\\Downloads\\Paint_Proyect\\Paint_Proyect\\Paint_Proyect\\administrador.cs",
-              "RelativeToolTip": "Paint_Proyect\\administrador.cs",
-              "ViewState": "AgIAAFIAAAAAAAAAAAAgwF8AAAAAAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "Dibujar.cs",
+              "DocumentMoniker": "D:\\ESPE\\5-6 level\\Grafica\\ComputacionGrafica\\Paint_Proyect\\Paint_Proyect\\Dibujar.cs",
+              "RelativeDocumentMoniker": "Paint_Proyect\\Dibujar.cs",
+              "ToolTip": "D:\\ESPE\\5-6 level\\Grafica\\ComputacionGrafica\\Paint_Proyect\\Paint_Proyect\\Dibujar.cs",
+              "RelativeToolTip": "Paint_Proyect\\Dibujar.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-12T05:30:15.921Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\marin\\Downloads\\Paint_Proyect\\Paint_Proyect\\Paint_Proyect\\Form1.cs",
-              "RelativeDocumentMoniker": "Paint_Proyect\\Form1.cs",
-              "ToolTip": "C:\\Users\\marin\\Downloads\\Paint_Proyect\\Paint_Proyect\\Paint_Proyect\\Form1.cs [Design]",
-              "RelativeToolTip": "Paint_Proyect\\Form1.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-12T05:30:16.202Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-12-12T05:30:15.968Z",
+              "EditorCaption": ""
             }
           ]
         }
